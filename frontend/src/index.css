@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+  --main-color: #8D3DAF;
+  --black: #222;
+  --white: #fff;
+  --light-black: #777;
+  --light-white: #fff9;
+  --dark-bg: rgba(0, 0, 0, .7);
+  --light-bg: #eee;
+  --border: .1rem solid var(--black);
+  --box-shadow: 1px 5px 10px 5px #ccc;
+  --box-shadow2: 10px 10px 10px 10px #ccc;
+  --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
+
+.button-effect {
+  color: white;
+  transition: 0.50s;
+  text-decoration: none;
+  border-radius: 30px;
+
+}
+
+.button-effect:hover {
+  border-color: #ff6699;
+  color: #ff6699;
+  font-weight: bold;
+}
+
+.button-effect :focus {
+  border-color: #ff6699;
+  color: #ff6699;
+  font-weight: bold;
+}
+
+.button-effect2 {
+  background: #ff6699;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em white;
+}
+
+.button-effect-white {
+  color: var(--main-color);
+  transition: 0.50s;
+  text-decoration: none;
+  border-radius: 30px;
+  background: white;
+  border: 2px solid;
+  font: inherit;
+  font-weight: bold;
+  line-height: 1;
+  font-weight: bold;
+
+  padding: 1em 2em;
+}
+
+.button-effect-white:hover {
+  border-color: white;
+  color: white;
+  font-weight: bold;
+}
+
+.button-effect-white :focus {
+  border-color: #ff6699;
+  color: #ff6699;
+  font-weight: bold;
+}
+
+.fill2:hover,
+.fill2:focus {
+  box-shadow: inset 0 0 0 2em #ff6699;
+}
+
+
+
+.white-button {
+  background: white;
+  border: none;
+  padding: 13px;
+  border-radius: 15px;
+  color: #8D3DAF;
+}
+
+.white-button:hover {
+  background: linear-gradient(to right, #ff6699 11%, #0033cc 91%);
+  border: none;
+  padding: 13px;
+  color: white;
+  border-radius: 15px;
+}
+
+
+.color {
+  color: var(--main-color);
+}
+
+.center {
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: bold;
+
+}
+
+.padding-1 {
+  padding-left: 22%;
+  padding-right: 22%;
+}
+
+.padding {
+  padding: 2%;
+}
+
+.color2 {
+  background: #cc66ff;
+  background: linear-gradient(to right, #cc66ff 0%, #CC00CC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-hr {
+  color: white;
+}
+
+.color4 {
+  background: linear-gradient(to right, #0033cc 11%, #ff6699 91%);
+}
+
+.button2 {
+  padding: 2%;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(to right, #0099ff 0%, #7a47ad 100%);
+  color: white;
+}
+
+.button-active {
+  padding: 2%;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(to right, #0099ff 0%, #1f1483 100%);
+  color: white;
+}
+
+.button3 {
+  padding: 3%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #cc66ff 0%, #cc00cc 100%);
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  z-index: 999;
+  margin-right: auto;
+}
+
+
+.tran {
+  transition: 2s;
+}
+
+
+.back-color {
+  background-color: var(--main-color);
+}

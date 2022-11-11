@@ -1,0 +1,16 @@
+.contact-us {
+    padding: 5%;
+    color: white !;
+}
+
+.paragraph-small {
+    font-size: 20px;
+    color: white;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.form-control {
+    border-radius: 30px;
+    padding: 2%;
+}

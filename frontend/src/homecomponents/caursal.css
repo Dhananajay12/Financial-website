@@ -1,0 +1,161 @@
+/* -----------caursal style start-------- */
+
+
+@keyframes movingclouds {
+    0% {
+        margin-right: 0%;
+    }
+
+    100% {
+        margin-right: -100%;
+    }
+}
+
+
+@keyframes movingclouds {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+.fade {
+    animation: fade-in-keyframes 2s;
+}
+
+@keyframes fade-in-keyframes {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.sky1 {
+    position: relative;
+    height: 60rem;
+    width: 100%;
+    background-image: url("/src/Images/banner.png");
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+@keyframes move {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes backup {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+.cloud-1 {
+    position: absolute;
+    animation: move 26s infinite;
+    animation-timing-function: linear;
+    animation-delay: -8s;
+}
+
+.cloud-5 {
+    position: absolute;
+    animation: move 26s infinite;
+    animation-timing-function: linear;
+    animation-delay: -8s;
+}
+
+.cloud-4 {
+    position: absolute;
+    animation: move 26s infinite;
+    animation-timing-function: linear;
+    animation-delay: -8s;
+}
+
+.cloud-3 {
+    position: absolute;
+    animation: backup 20s infinite;
+    animation-timing-function: linear;
+    animation-delay: -8s;
+}
+
+.cloud-2 {
+    position: absolute;
+    animation: backup 20s infinite;
+    animation-timing-function: linear;
+}
+
+.cloud-6 {
+    position: absolute;
+    background-repeat: repeat-y;
+    animation: backup1 36s infinite;
+    animation-timing-function: linear;
+    animation-delay: -8s;
+}
+
+.cloud-8 {
+    position: absolute;
+    background-repeat: repeat-y;
+    animation: backup2 16s infinite;
+    animation-timing-function: linear;
+    animation-delay: -1s;
+}
+
+.cloud-10 {
+    position: absolute;
+    background-repeat: repeat-y;
+}
+
+.cloud-9 {
+    position: absolute;
+    background-repeat: repeat-y;
+    animation: backup2 80s infinite;
+    animation-timing-function: linear;
+    animation-delay: -1s;
+}
+
+.cloud-7 {
+    position: absolute;
+    background-repeat: repeat-y;
+    animation: backup2 45s infinite;
+    animation-timing-function: linear;
+    animation-delay: 8s;
+}
+
+@keyframes backup1 {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+@keyframes backup2 {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+
+
+/* -----------caursal style end-------- */
