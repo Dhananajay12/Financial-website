@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 
 import "aos/dist/aos.css"; //
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -40,8 +41,8 @@ const Footer = () => {
                     Straight Out Of Fashion Houses. You Can Shop Online At
                     RAZEECOM.
                   </p>
-                  <button className="button-effect  button-effect2 fill">
-                    Know more
+                  <button className="button-effect-white  fill2 mx-2 ">
+                    Know More
                   </button>
                 </ul>
               </div>
@@ -53,53 +54,53 @@ const Footer = () => {
                     <h3 className="text-white ">Quick a</h3>
                     <hr className="color-hr"></hr>
                     <li className="zoom marginFooter">
-                      <a href="/contact" className="text-white color mt-1">
+                      <Link to="/contact" className="text-white color mt-1">
                         {" "}
                         <i
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                     <li className="zoom marginFooter">
                       {" "}
-                      <a href="/about" className="text-white  color ">
+                      <Link to="/about" className="text-white  color ">
                         {" "}
                         <i
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li className="zoom marginFooter">
-                      <a href="/product" className="text-white  color ">
+                      <Link to="/product" className="text-white  color ">
                         <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
                         Product
-                      </a>
+                      </Link>
                     </li>
                     <li className="zoom marginFooter">
                       {" "}
-                      <a href="/" className="text-white color  ">
+                      <Link to="/" className="text-white color  ">
                         {" "}
                         <i
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
                         as
-                      </a>
+                      </Link>
                     </li>
                     <li className="zoom marginFooter">
                       {" "}
-                      <a href="/" className="text-white color  ">
+                      <Link to="/" className="text-white color  ">
                         {" "}
                         <i
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
                         as
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -110,53 +111,53 @@ const Footer = () => {
                   <h3 className="text-white ">Blog</h3>
                   <hr className="color-hr"></hr>
                   <li className="zoom marginFooter">
-                    <a href="/" className="text-white color mt-1">
+                    <Link to="/" className="text-white color mt-1 ">
                       {" "}
                       <i
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                   <li className="zoom marginFooter">
                     {" "}
-                    <a href="/" className="text-white  color ">
+                    <Link to="/" className="text-white  color ">
                       {" "}
                       <i
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li className="zoom marginFooter">
-                    <a href="/" className="text-white  color ">
+                    <a to="/" className="text-white  color ">
                       <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
                       as
                     </a>
                   </li>
                   <li className="zoom marginFooter">
                     {" "}
-                    <a href="/" className="text-white color  ">
+                    <Link to="/" className="text-white color  ">
                       {" "}
                       <i
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
                       as
-                    </a>
+                    </Link>
                   </li>
                   <li className="zoom marginFooter">
                     {" "}
-                    <a href="/" className="text-white color  ">
+                    <Link to="/" className="text-white color  ">
                       {" "}
                       <i
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
                       as
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -202,8 +203,8 @@ const Footer = () => {
                 <h3 className="mt-2 text-white ">Know More About Lincensing</h3>
                 <br></br>
 
-                <button className="button-effect  button-effect2 fill">
-                  Fill In
+                <button className="button-effect-white  fill2 mx-2 ">
+                  Click Me
                 </button>
               </div>
             </div>

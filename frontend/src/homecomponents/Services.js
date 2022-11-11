@@ -15,6 +15,7 @@ import img6 from "../Images/6.jpg";
 import img7 from "../Images/7.jpeg";
 import avatar from "../Images/avatar.jpg";
 import office from "../Images/office.jpeg";
+
 import "./services.css";
 import { FaShieldAlt, FaUsers, FaUserShield } from "react-icons/fa";
 import { GiTakeMyMoney } from "react-icons/gi";
@@ -45,6 +46,8 @@ const Services = () => {
             <Link to="/" className="button-effect-white  fill2">
               Get in Touch
             </Link>
+            <br></br>
+            <br></br>
           </div>
         </div>
       </div>
@@ -186,7 +189,7 @@ const Services = () => {
             data-aos-duration="3000"
           >
             <br></br>
-            <br></br>
+
             <img src={b4} className="img-fluid rounded" />
           </div>
         </div>
@@ -196,35 +199,35 @@ const Services = () => {
         <br></br>
         <br></br>
         <div className="row" data-aos="fade-up-left" data-aos-duration="3000">
-          <div className="col-lg-2 col-md-4 center zoom mt-2">
+          <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
             <TbCertificate className="icon-service" />
             <h4 className="text-secondary">TRADE</h4>
-            <h3 className="bold-text">LICENSE</h3>
+            <h3 className="bold-text color-hover">LICENSE</h3>
           </div>
-          <div className="col-lg-2 col-md-4 center zoom mt-2">
+          <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
             <FaUserShield className="icon-service" />
             <h4 className="text-secondary">FIND A</h4>
-            <h3 className="bold-text">SPONSOR</h3>
+            <h3 className="bold-text color-hover">SPONSOR</h3>
           </div>
-          <div className="col-lg-2 col-md-4 center zoom mt-2">
+          <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
             <GiTakeMyMoney className="icon-service" />
             <h4 className="text-secondary">COMPANY</h4>
-            <h3 className="bold-text">LIQUIDATION</h3>
+            <h3 className="bold-text ">LIQUIDATION</h3>
           </div>
-          <div className="col-lg-2 col-md-4 center zoom mt-2">
+          <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
             <FaShieldAlt className="icon-service" />
             <h4 className="text-secondary">BRAND</h4>
-            <h3 className="bold-text">PROTECTION</h3>
+            <h3 className="bold-text color-hover">PROTECTION</h3>
           </div>
-          <div className="col-lg-2 col-md-4 center zoom  mt-2">
+          <div className="col-lg-2 col-md-4 center zoom  mt-2 color-hover">
             <BsBank2 className="icon-service" />
             <h4 className="text-secondary"> BANK ACCOUNT</h4>
-            <h3 className="bold-text">OPENING</h3>
+            <h3 className="bold-text color-hover">OPENING</h3>
           </div>
-          <div className="col-lg-2 col-md-4 center zoom  mt-2">
+          <div className="col-lg-2 col-md-4 center zoom  mt-2 color-hover">
             <FaUsers className="icon-service" />
             <h4 className="text-secondary"> PRO</h4>
-            <h3 className="bold-text">SERVICES</h3>
+            <h3 className="bold-text color-hover">SERVICES</h3>
           </div>
         </div>
       </div>
@@ -240,7 +243,7 @@ const Services = () => {
         data-aos="fade-up"
         data-aos-duration="3000"
         style={{
-          background: "linear-gradient(to right, #0033cc 11%, #ff6699 91%)",
+          background: "#8D3DAF",
         }}
       >
         <br></br>
@@ -275,7 +278,7 @@ const Services = () => {
             data-aos-duration="3000"
           >
             <br></br>
-            <img src={office} alt="error" className="img-fluid rounded" />
+            <img src={office} alt="error" className="img-fluid rounded zoom" />
           </div>
           <div
             className="col-lg-8"
@@ -336,7 +339,7 @@ const Services = () => {
         </div>
         <br></br>
         <br></br>
-
+        <br></br>
         <Swiper
           spaceBetween={30}
           keyboard={{

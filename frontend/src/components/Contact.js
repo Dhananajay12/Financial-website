@@ -1,10 +1,11 @@
 import React from "react";
 import "./contact.css";
+import advice from "../Images/advice.png";
 
 const Contact = () => {
   return (
     <>
-      <div className="container-fluid back-color contact-us">
+      <div className="container-fluid color4 contact-us">
         <h1 className="bold-text mx-2 text-white">Get Started Today!</h1>
         <br></br>
         <div className="row">
@@ -93,6 +94,19 @@ const Contact = () => {
           >
             CONTACT NOW
           </button>
+        </div>
+      </div>
+      <div className="container-fluid padding-2">
+        <div className="d-flex">
+          <img src={advice} alt="error" style={{ width: "200px" }} />
+
+          <div>
+            <br></br>
+            <h3 className="mt-5">
+              Seek expert advice from our experienced professionals. <br></br>
+              Call +971 522 407 111
+            </h3>
+          </div>
         </div>
       </div>
     </>
