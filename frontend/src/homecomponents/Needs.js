@@ -4,7 +4,8 @@ import "./need.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; //
 
-import { CgArrowLeftO } from "react-icons/cg";
+import { CgArrowLeft, CgArrowLeftO } from "react-icons/cg";
+import { BsArrowLeftCircle, BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 const Needs = () => {
   const [showComponent, setshowComponent] = useState("start");
@@ -27,6 +28,7 @@ const Needs = () => {
       <br />
       <br />
       <br />
+      <br></br>
       <div>
         {showComponent === "start" && (
           <>
@@ -43,7 +45,7 @@ const Needs = () => {
                   >
                     <p>I WANT TO START A COMPANY</p>
 
-                    <div className="go-corner" href="#">
+                    <div className="go-corner">
                       <div className="go-arrow">→</div>
                     </div>
                   </div>
@@ -58,7 +60,7 @@ const Needs = () => {
                     className=" card-small  card color"
                   >
                     <p>I ALREADY HAVE A COMPANY</p>
-                    <div className="go-corner" href="#">
+                    <div className="go-corner">
                       <div className="go-arrow">→</div>
                     </div>
                   </div>
@@ -73,7 +75,7 @@ const Needs = () => {
                     className=" card-small card color"
                   >
                     <p>TALK TO OUR EXPERT</p>
-                    <div className="go-corner" href="#">
+                    <div className="go-corner">
                       <div className="go-arrow">→</div>
                     </div>
                   </div>
@@ -83,40 +85,56 @@ const Needs = () => {
           </>
         )}
         {showComponent === "add-trip" && (
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-lg-4">
+          <div
+            className="container  "
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div className="row ">
+              <div
+                className="col-md-6 col-lg-4"
+                data-aos="fade-up-right"
+                data-aos-duration="3000"
+              >
                 <div
                   onClick={() => setshowComponent("third")}
                   className="card-small card color"
                 >
                   {" "}
                   <p>MAINLAND</p>
-                  <div className="go-corner" href="#">
+                  <div className="go-corner">
                     <div className="go-arrow">→</div>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4">
+              <div
+                className="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div
                   onClick={() => setshowComponent("third")}
                   className=" card-small card color"
                 >
                   {" "}
                   <p>FREEZONE</p>
-                  <div className="go-corner" href="#">
+                  <div className="go-corner">
                     <div className="go-arrow">→</div>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4">
+              <div
+                className="col-md-6 col-lg-4"
+                data-aos="fade-up-left"
+                data-aos-duration="3000"
+              >
                 <div
                   onClick={() => setshowComponent("third")}
                   className="card-small card color"
                 >
                   {" "}
                   <p>OFFSHORE</p>
-                  <div className="go-corner" href="#">
+                  <div className="go-corner">
                     <div className="go-arrow">→</div>
                   </div>
                 </div>
@@ -125,63 +143,184 @@ const Needs = () => {
             <br></br>
             <div className="row">
               <div className="div-icons">
-                <CgArrowLeftO
-                  className="icons "
+                <BsArrowLeftCircle
+                  className="icons-small zoom"
                   onClick={() => setshowComponent("start")}
                 />
               </div>
               <center>
-                <div className="col-md-6 col-lg-4">
+                <div
+                  className="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   <div
                     onClick={() => setshowComponent("third")}
                     className="card-small card color"
                   >
                     {" "}
                     <p>TALK TO OUR EXPERT</p>
-                    <div className="go-corner" href="#">
+                    <div className="go-corner">
                       <div className="go-arrow">→</div>
                     </div>
                   </div>
                 </div>
+                <br></br>
+                <button
+                  className="button-effect fill"
+                  onClick={() => setshowComponent("start")}
+                >
+                  BACK TO HOME
+                </button>
               </center>
             </div>
           </div>
         )}
         {showComponent === "company" && (
-          <div className="container">
+          <div
+            className="container"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="row">
               <div className="col-md-6 col-lg-4">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card color"
+                  className="card-small card color"
                 >
                   {" "}
                   <p>I WANT TO RENEW MY LICENSE</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-4">
                 <div
-                  onClick={() => setshowComponent("third")}
-                  className="card color"
+                  onClick={() => setshowComponent("sub-third")}
+                  className="card-small card color"
                 >
                   {" "}
                   <p>I NEED TO MAKE CHANGES IN MY LICENSE</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-4">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card color"
+                  className="card-small card color"
                 >
                   {" "}
-                  <p>I WNAT TO SELL MY LICENSE</p>
+                  <p>I WANT TO SELL MY LICENSE</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
                 </div>
               </div>
             </div>
             <br></br>
+            <br></br>
             <center>
               <button
-                className="button"
+                className="button-effect fill"
+                onClick={() => setshowComponent("start")}
+              >
+                BACK TO HOME
+              </button>
+            </center>
+            <br></br>
+          </div>
+        )}
+        {showComponent === "sub-third" && (
+          <div
+            className="container"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div className="row">
+              <div className="col-md-6 col-lg-4">
+                <div
+                  onClick={() => setshowComponent("third")}
+                  className="card-small card color"
+                >
+                  {" "}
+                  <p>I WANT TO CCHANGE MY LOCATION</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-4">
+                <div
+                  onClick={() => setshowComponent("sub-third")}
+                  className="card-small card color"
+                >
+                  {" "}
+                  <p>I WANT TO CHANGES MY LOCAL SPONSOR</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-4">
+                <div
+                  onClick={() => setshowComponent("third")}
+                  className="card-small card color"
+                >
+                  {" "}
+                  <p>I WANT TO ADD/CHANGE ACTIVITY</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br></br>
+            <div className="row">
+              <div className="col-md-6 col-lg-4">
+                <div
+                  onClick={() => setshowComponent("third")}
+                  className="card-small card color"
+                >
+                  {" "}
+                  <p>I WANT TO ADD/REMOVE PARTNER</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-4">
+                <div
+                  onClick={() => setshowComponent("third")}
+                  className="card-small card color"
+                >
+                  {" "}
+                  <p>OTHER CHANGES</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-4">
+                <div
+                  onClick={() => setshowComponent("third")}
+                  className="card-small card color"
+                >
+                  {" "}
+                  <p>TALK TO OUR EXPERT</p>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br></br>
+            <br></br>
+            <center>
+              <button
+                className="button-effect fill"
                 onClick={() => setshowComponent("start")}
               >
                 BACK TO HOME
@@ -191,27 +330,35 @@ const Needs = () => {
           </div>
         )}
         {showComponent === "third" && (
-          <div className="container">
+          <div
+            className="container"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="row">
-              <div className="div-icons">
-                <CgArrowLeftO
-                  className="icons"
-                  onClick={() => setshowComponent("start")}
-                />
-              </div>
+              {/* <BsArrowLeftCircle
+                className="icons-small zoom"
+                onClick={() => setshowComponent("start")}
+              /> */}
+              <br></br>
+              <br></br>
               <center>
-                <div className="col-md-3">
+                <div className="col-md-4">
                   <div
                     onClick={() => setshowComponent("start")}
-                    className="card color"
+                    className="card-small card color"
                   >
                     {" "}
                     <p>GET EXPERTS ADVICE NOW</p>
+                    <div className="go-corner">
+                      <div className="go-arrow">→</div>
+                    </div>
                   </div>
                 </div>
                 <br></br>
+                <br></br>
                 <button
-                  className="button"
+                  className="button-effect fill"
                   onClick={() => setshowComponent("start")}
                 >
                   BACK TO HOME
@@ -221,6 +368,8 @@ const Needs = () => {
           </div>
         )}
       </div>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <br></br>

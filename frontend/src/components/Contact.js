@@ -1,6 +1,7 @@
 import React from "react";
 import "./contact.css";
 import advice from "../Images/advice.png";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
         <br></br>
         <div className="row">
           <div className="col-md-6 col-lg-6">
-            <div className="input-fluid">
+            <div className="input-fluid mt-2">
               <p className="paragraph-small">FullName:</p>
               <input
                 type="text"
@@ -21,7 +22,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-md-6 col-lg-6">
-            <div className="input-fluid">
+            <div className="input-fluid mt-2">
               <p className="paragraph-small">LastName:</p>
               <input
                 type="text"
@@ -32,10 +33,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <br></br>
+
         <div className="row">
           <div className="col-md-6 col-lg-6">
-            <div className="input-fluid">
+            <div className="input-fluid mt-2">
               <p className="paragraph-small">Phone:</p>
 
               <input
@@ -47,7 +48,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-md-6 col-lg-6">
-            <div className="input-fluid">
+            <div className="input-fluid mt-2">
               <p className="paragraph-small">Email:</p>
 
               <input
@@ -59,9 +60,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <br></br>
+
         <div className="row">
-          <div className="input-fluid">
+          <div className="input-fluid mt-2">
             <p className="paragraph-small">Message:</p>
             <input
               type="text"
@@ -84,8 +85,15 @@ const Contact = () => {
             information shared above is genuine to the best of my knowledge.
           </p>
           <p className="mx-2">
-            This site is protected by reCAPTCHA and the Google Privacy Policy
-            and Terms of Service apply.
+            This site is protected by reCAPTCHA and the Google
+            <Link to="/" className="mx-1">
+              Privacy Policy{" "}
+            </Link>
+            and{" "}
+            <Link to="/" className="mx-1">
+              Terms{" "}
+            </Link>{" "}
+            of Service apply.
           </p>
 
           <button

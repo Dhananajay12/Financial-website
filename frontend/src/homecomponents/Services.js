@@ -4,13 +4,13 @@ import "aos/dist/aos.css"; //
 import { BsBank2, BsBuilding } from "react-icons/bs";
 import { BiBuilding, BiBuildings } from "react-icons/bi";
 import { TbCertificate } from "react-icons/tb";
-
+import { FcProcess } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import b1 from "../Images/b1.jpeg";
 import b2 from "../Images/b2.jpeg";
 import b3 from "../Images/b3.jpeg";
 import b4 from "../Images/b4.jpeg";
-import img5 from "../Images/5.jpg";
+import img5 from "../Images/5.png";
 import img6 from "../Images/6.jpg";
 import img7 from "../Images/7.jpeg";
 import avatar from "../Images/avatar.jpg";
@@ -32,6 +32,168 @@ const Services = () => {
   }, []);
   return (
     <>
+      <div className="container">
+        {" "}
+        <div className="center">
+          <p className="color2 h1 bold-text">What Services We Offers</p>
+          <p className=" mt-4 mx-5">
+            Are you looking to set up a business in Dubai? Starting a business
+            in Dubai is easy with help from the right professionals. Kiltons
+            offers the best and economical business setup services
+          </p>
+          <p className="bold-text h4 mt-4 text-secondary">
+            Choose your business need in Dubai or UAE to continue
+          </p>
+        </div>
+        <br></br>
+        <div className="row" data-aos="fade-up-left" data-aos-duration="3000">
+          <div className="col-lg-4">
+            {" "}
+            <div className="container1">
+              <div className="card-5">
+                <div className="slide slide1">
+                  <div className="content-2">
+                    <div className="icon">
+                      <img
+                        src={img5}
+                        className="img-fluid rounded"
+                        alt="error"
+                      ></img>
+                      <TbCertificate fontSize="0px" className="fa" />
+                      {/* <i className="fa fa-user-circle" aria-hidden="true"></i> */}
+                      <p className="text-white fa">Licensing </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="slide slide2">
+                  <div className="content-2">
+                    <h3>Hello there!</h3>
+
+                    <p>Trust yourself and keep going.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 mt-5">
+            <div className="card-small-2 zoom">
+              <div className="center">
+                <br></br>
+                <FcProcess fontSize="90px" />
+                <br></br>
+                <br></br>
+                <h3 className="bold-text">FAST PROCESS</h3>
+                <br></br>
+
+                <p>
+                  Providing insight-driven transformation to investment banks,
+                  wealth and asset managers, exchanges, clearing houses.
+                </p>
+                <br></br>
+                <br></br>
+                <Link to="/" className="button-effect-white mt-3  fill2">
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 mt-5">
+            <div className="card-small-2 zoom">
+              <div className="center">
+                <br></br>
+                <TbCertificate fontSize="90px" color="#8D3DAF" />
+                <br></br>
+                <br></br>
+                <h3 className="bold-text">LICENSING</h3>
+                <br></br>
+
+                <p>
+                  Providing insight-driven transformation to investment banks,
+                  wealth and asset managers, exchanges, clearing houses.
+                </p>
+                <br></br>
+                <br></br>
+                <Link to="/" className="button-effect-white mt-3  fill2">
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row" data-aos="fade-up-left" data-aos-duration="3000">
+          <div className="col-lg-4">
+            <div className="card-small-2 zoom mt-5">
+              <div className="center">
+                <br></br>
+                <FcProcess fontSize="90px" />
+                <br></br>
+                <br></br>
+                <h3 className="bold-text">Fast Process</h3>
+                <br></br>
+
+                <p>
+                  Providing insight-driven transformation to investment banks,
+                  wealth and asset managers, exchanges, clearing houses.
+                </p>
+                <br></br>
+                <br></br>
+                <Link to="/" className="button-effect-white mt-3  fill2">
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 mt-5">
+            <div className="card-small-2 zoom">
+              <div className="center">
+                <br></br>
+                <FcProcess fontSize="90px" />
+                <br></br>
+                <br></br>
+                <h3 className="bold-text">Fast Process</h3>
+                <br></br>
+
+                <p>
+                  Providing insight-driven transformation to investment banks,
+                  wealth and asset managers, exchanges, clearing houses.
+                </p>
+                <br></br>
+                <br></br>
+                <Link to="/" className="button-effect-white mt-3  fill2">
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 mt-5">
+            <div className="card-small-2 zoom">
+              <div className="center">
+                <br></br>
+                <FcProcess fontSize="90px" />
+                <br></br>
+                <br></br>
+                <h3 className="bold-text">Fast Process</h3>
+                <br></br>
+
+                <p>
+                  Providing insight-driven transformation to investment banks,
+                  wealth and asset managers, exchanges, clearing houses.
+                </p>
+                <br></br>
+                <br></br>
+                <Link to="/" className="button-effect-white mt-3  fill2">
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="container-fluid">
         <div className="row center color4">
           <div className="padding">
@@ -43,6 +205,7 @@ const Services = () => {
               talk to one of our Company Formation Specialists.
             </h5>
             <br></br>
+            <br></br>
             <Link to="/" className="button-effect-white  fill2">
               Get in Touch
             </Link>
@@ -53,24 +216,12 @@ const Services = () => {
       </div>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
+
       <div className="container">
-        <div className="center">
-          <p className="color2 h1 bold-text">What Services We Offers</p>
-          <p className="padding-1 mt-4">
-            Are you looking to set up a business in Dubai? Starting a business
-            in Dubai is easy with help from the right professionals. Kiltons
-            offers the best and economical business setup services
-          </p>
-          <p className="bold-text h4 mt-4 text-secondary">
-            Choose your business need in Dubai or UAE to continue
-          </p>
-        </div>
         <br></br>
         <br></br>
         <div className="row">
-          <div className="col-lg-4 col-md-6 mt-5 center">
+          <div className="col-lg-4 col-md-6 mt-5">
             <center>
               <div className="box">
                 <div className="imgBox">
@@ -79,10 +230,10 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="content shadow">
-                  <h2>
+                  <h2 className="bold-text">
                     <BsBuilding
                       fontSize="40px"
-                      className="mx-2"
+                      className="mx-2 bold-text"
                       color="purple"
                     />
                     FREEZONE LICENSE
@@ -102,10 +253,10 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="content shadow">
-                  <h2>
+                  <h2 className="bold-text">
                     <BiBuildings
                       fontSize="40px"
-                      className="mx-2"
+                      className="mx-2 bold-text"
                       color="purple"
                     />
                     MAINLAND LICENSE
@@ -125,10 +276,10 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="content shadow">
-                  <h2>
+                  <h2 className="bold-text">
                     <BiBuilding
                       fontSize="40px"
-                      className="mx-2"
+                      className="mx-2 "
                       color="purple"
                     />{" "}
                     OFFSHORE LICENSE
@@ -221,7 +372,7 @@ const Services = () => {
           </div>
           <div className="col-lg-2 col-md-4 center zoom  mt-2 color-hover">
             <BsBank2 className="icon-service" />
-            <h4 className="text-secondary"> BANK ACCOUNT</h4>
+            <h5 className="text-secondary"> BANK ACCOUNT</h5>
             <h3 className="bold-text color-hover">OPENING</h3>
           </div>
           <div className="col-lg-2 col-md-4 center zoom  mt-2 color-hover">
@@ -243,25 +394,63 @@ const Services = () => {
         data-aos="fade-up"
         data-aos-duration="3000"
         style={{
-          background: "#8D3DAF",
+          background: "rgb(114 36 147)",
         }}
       >
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
+
         <div className="row">
           <div className="col-lg-4 col-md-4" style={{ padding: "0px" }}>
-            <img src={img5} alt="errror" className="img-fluid" />
+            <div className="back-img-4">
+              <div className="border-class">
+                <h2>Why ?</h2>
+                <br></br>
+
+                <h5>
+                  Dubai has undergone a steady metamorphosis from a Petroleum
+                  dependent economy to an innovation and
+                  technology-driven........
+                </h5>
+                <br></br>
+                <h5>Know more {">>"}</h5>
+              </div>
+            </div>
           </div>
           <div className="col-lg-4 col-md-4" style={{ padding: "0px" }}>
-            <img src={img7} alt="errror" className="img-fluid" />
+            <div className="back-img-4">
+              <div className="border-class">
+                <h2>Why ?</h2>
+                <br></br>
+
+                <h5>
+                  Dubai has undergone a steady metamorphosis from a Petroleum
+                  dependent economy to an innovation and
+                  technology-driven........
+                </h5>
+                <br></br>
+                <h5>Know more {">>"}</h5>
+              </div>
+            </div>
           </div>
           <div className="col-lg-4 col-md-4" style={{ padding: "0px" }}>
-            <img src={img7} alt="errror" className="img-fluid" />
+            <div className="back-img-4">
+              <div className="border-class">
+                <h2>Why ?</h2>
+                <br></br>
+
+                <h5>
+                  Dubai has undergone a steady metamorphosis from a Petroleum
+                  dependent economy to an innovation and
+                  technology-driven........
+                </h5>
+                <br></br>
+                <h5>Know more {">>"}</h5>
+              </div>
+            </div>
           </div>
         </div>
-        <br></br>
         <br></br>
         <br></br>
         <br></br>
@@ -312,6 +501,7 @@ const Services = () => {
               services across the Emirates.
             </p>
             <br></br>
+
             <Link to="/" className="button-effect-white  fill2">
               Get in Touch
             </Link>
@@ -361,6 +551,7 @@ const Services = () => {
             },
           }}
           name="mySwiper"
+          className="mx-5"
         >
           <SwiperSlide>
             <div

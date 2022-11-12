@@ -16,7 +16,7 @@ const Footer = () => {
     <footer style={{ marginBottom: "-2rem" }} className="mt-5">
       <div
         className="background5"
-        style={{ background: " #8D3DAF", opacity: "" }}
+        style={{ background: " rgb(114 36 147)", opacity: "" }}
       >
         <div className="transbox5">
           <div className="container-fluid ">
@@ -54,7 +54,7 @@ const Footer = () => {
                     <h3 className="text-white ">Quick a</h3>
                     <hr className="color-hr"></hr>
                     <li className="zoom marginFooter">
-                      <Link to="/contact" className="text-white color mt-1">
+                      <Link to="/contact" className="text-white color mt-1 ">
                         {" "}
                         <i
                           className="fa fa-angle-right"
@@ -88,7 +88,7 @@ const Footer = () => {
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
-                        as
+                        About Us
                       </Link>
                     </li>
                     <li className="zoom marginFooter">
@@ -99,7 +99,7 @@ const Footer = () => {
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
-                        as
+                        About Us
                       </Link>
                     </li>
                   </ul>
@@ -134,7 +134,7 @@ const Footer = () => {
                   <li className="zoom marginFooter">
                     <a to="/" className="text-white  color ">
                       <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                      as
+                      About Us
                     </a>
                   </li>
                   <li className="zoom marginFooter">
@@ -145,7 +145,7 @@ const Footer = () => {
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
-                      as
+                      About Us
                     </Link>
                   </li>
                   <li className="zoom marginFooter">
@@ -156,7 +156,7 @@ const Footer = () => {
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
-                      as
+                      About Us
                     </Link>
                   </li>
                 </ul>
@@ -168,31 +168,30 @@ const Footer = () => {
               >
                 <ul>
                   <br />
-                  <h3 className="text-white ">Contact</h3>
+                  <h3 className="text-white "> Our Contact</h3>
                   <hr className="color-hr"></hr>
-
-                  <li className="text-white d-flex">
-                    {" "}
-                    <i className="fa fa-phone-square"></i>{" "}
-                    +945545454545/94513454282/9137319282
+                  <li className="text-white">
+                    <i className="fa fa-map-marker mx-1"></i> G06, Bin Thani
+                    Building, Near Hilal Bank, <br />
+                    Al Qusais, Dubai, UAE. P.O. Box 237739
                   </li>
                   <br />
                   <li className="text-white d-flex">
                     {" "}
-                    <i className="fa fa-phone-square"></i>
-                    <span className="mx-1">+91545450 48830</span>{" "}
+                    <i className="fa fa-phone-square mx-1"></i> +971 522 407 111
                   </li>
                   <br />
 
                   <li className="text-white">
                     {" "}
-                    <i className="fa fa-envelope"></i>{" "}
+                    <i className="fa fa-envelope  mx-1"></i>{" "}
                     dhananjayavare786@gmail.com
                   </li>
                   <br />
-                  <li className="text-white">
-                    <i className="fa fa-map-marker"></i> kalyan , Thane , Mumbai{" "}
-                  </li>
+                  {/* <li className="text-white">
+                    <i className="fa fa-map-marker mx-1"></i> kalyan , Thane ,
+                    Mumbai{" "}
+                  </li> */}
                   <br />
                 </ul>
               </div>
