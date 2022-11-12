@@ -19,11 +19,13 @@ const Footer = () => {
         style={{ background: " rgb(114 36 147)", opacity: "" }}
       >
         <div className="transbox5">
-          <div className="container-fluid ">
+          <div className="container-fluid">
+            <br></br>
+            <br></br>
             <div className="row padding2">
-              <div className="col-sm-6 col-md-4 center2 mt-5 mb-5">
+              <div className="col-sm-12 col-md-6 col-lg-3 center2 mt-1 mb-5">
                 <ul>
-                  <h3 className="text-white mt-4">
+                  <h3 className="text-white mt-4 h3 d-flex">
                     <RiShoppingCartFill /> RazeEcom.{" "}
                   </h3>
                   <hr className="color-hr"></hr>
@@ -41,19 +43,19 @@ const Footer = () => {
                     Straight Out Of Fashion Houses. You Can Shop Online At
                     RAZEECOM.
                   </p>
-                  <button className="button-effect-white  fill2 mx-2 ">
+                  <button className="button-effect-white  fill2  mt-4">
                     Know More
                   </button>
                 </ul>
               </div>
 
-              <div className="col-sm-6 col-md-2 mt-5 mb-5 ">
-                <div className="center2">
+              <div className="col-sm-12 col-md-6 col-lg-3 mt-1 mb-5 ">
+                <div className="center2 mx-4">
                   <ul>
                     <br />
-                    <h3 className="text-white ">Quick a</h3>
+                    <h3 className="text-white h3 ">Quick a</h3>
                     <hr className="color-hr"></hr>
-                    <li className="zoom marginFooter">
+                    <li className="zoom marginFooter  mt-3">
                       <Link to="/contact" className="text-white color mt-1 ">
                         {" "}
                         <i
@@ -63,9 +65,9 @@ const Footer = () => {
                         Contact Us
                       </Link>
                     </li>
-                    <li className="zoom marginFooter">
+                    <li className="zoom marginFooter  mt-3">
                       {" "}
-                      <Link to="/about" className="text-white  color ">
+                      <Link to="/about" className="text-white  color   mt-3">
                         {" "}
                         <i
                           className="fa fa-angle-right"
@@ -74,8 +76,8 @@ const Footer = () => {
                         About Us
                       </Link>
                     </li>
-                    <li className="zoom marginFooter">
-                      <Link to="/product" className="text-white  color ">
+                    <li className="zoom marginFooter  mt-3">
+                      <Link to="/product" className="text-white  color  ">
                         <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
                         Product
                       </Link>
@@ -91,7 +93,7 @@ const Footer = () => {
                         About Us
                       </Link>
                     </li>
-                    <li className="zoom marginFooter">
+                    <li className="zoom marginFooter  mt-3">
                       {" "}
                       <Link to="/" className="text-white color  ">
                         {" "}
@@ -105,12 +107,12 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-sm-6 col-md-2 mt-5 mb-5">
-                <ul>
+              <div className="col-sm-12 col-md-6 col-lg-3 mt-1 mb-5">
+                <ul className="mx-2">
                   <br />
-                  <h3 className="text-white ">Blog</h3>
+                  <h3 className="text-white h3 ">Blog</h3>
                   <hr className="color-hr"></hr>
-                  <li className="zoom marginFooter">
+                  <li className="zoom marginFooter mt-3">
                     <Link to="/" className="text-white color mt-1 ">
                       {" "}
                       <i
@@ -120,7 +122,8 @@ const Footer = () => {
                       Contact Us
                     </Link>
                   </li>
-                  <li className="zoom marginFooter">
+
+                  <li className="zoom marginFooter  mt-3">
                     {" "}
                     <Link to="/" className="text-white  color ">
                       {" "}
@@ -131,7 +134,7 @@ const Footer = () => {
                       About Us
                     </Link>
                   </li>
-                  <li className="zoom marginFooter">
+                  <li className="zoom marginFooter  mt-3">
                     <a to="/" className="text-white  color ">
                       <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
                       About Us
@@ -148,7 +151,7 @@ const Footer = () => {
                       About Us
                     </Link>
                   </li>
-                  <li className="zoom marginFooter">
+                  <li className="zoom marginFooter  mt-3">
                     {" "}
                     <Link to="/" className="text-white color  ">
                       {" "}
@@ -163,14 +166,14 @@ const Footer = () => {
               </div>
 
               <div
-                className="col-sm-6 col-md-4 mt-5 mb-5"
+                className="col-sm-12 col-md-6 col-lg-3 mt-2 mb-2"
                 style={{ fontFamily: "Poppins" }}
               >
                 <ul>
                   <br />
-                  <h3 className="text-white "> Our Contact</h3>
+                  <h3 className="text-white h3"> Our Contact</h3>
                   <hr className="color-hr"></hr>
-                  <li className="text-white">
+                  <li className="text-white mt-4">
                     <i className="fa fa-map-marker mx-1"></i> G06, Bin Thani
                     Building, Near Hilal Bank, <br />
                     Al Qusais, Dubai, UAE. P.O. Box 237739
@@ -199,7 +202,9 @@ const Footer = () => {
             <hr className="color-hr"></hr>
             <div className="row">
               <div className="register-free  ">
-                <h3 className="mt-2 text-white ">Know More About Lincensing</h3>
+                <h3 className="mt-2 text-white h3">
+                  Know More About Lincensing
+                </h3>
                 <br></br>
 
                 <button className="button-effect-white  fill2 mx-2 ">
@@ -211,8 +216,11 @@ const Footer = () => {
             <hr className="color-hr"></hr>
 
             <br></br>
+
             <div className="icon-social">
-              <FaFacebookF className="icons zoom" />
+              <p className="">
+                <FaFacebookF className="icons zoom" />
+              </p>
               <AiOutlineInstagram className="icons zoom" />
               <FaTwitter className="icons zoom" />
               <AiOutlineSkype className="icons zoom" />
@@ -220,9 +228,9 @@ const Footer = () => {
               <AiFillGithub className="icons zoom" />
               <AiOutlineGoogle className="icons zoom" />
             </div>
-            <br></br>
+
             <div className="icon-social color5">
-              <h5 className="padding text-white">
+              <h5 className="padding text-white h5">
                 @ 2022 Copyright:Razer.c53.com
               </h5>
             </div>

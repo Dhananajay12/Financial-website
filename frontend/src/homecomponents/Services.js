@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; //
-import { BsBank2, BsBuilding } from "react-icons/bs";
+import { BsArrowDownRightSquare, BsBank2, BsBuilding } from "react-icons/bs";
 import { BiBuilding, BiBuildings } from "react-icons/bi";
 import { TbCertificate } from "react-icons/tb";
 import { FcProcess } from "react-icons/fc";
@@ -25,6 +25,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Pagination, Navigation } from "swiper";
+import ChakkraModal from "./ChakkraModal";
 
 const Services = () => {
   useEffect(() => {
@@ -59,9 +60,13 @@ const Services = () => {
                         className="img-fluid rounded"
                         alt="error"
                       ></img>
-                      <TbCertificate fontSize="0px" className="fa" />
+                      {/* <TbCertificate className="fa" /> */}
+
                       {/* <i className="fa fa-user-circle" aria-hidden="true"></i> */}
-                      <p className="text-white fa">Licensing </p>
+
+                      <p className="text-white fa" style={{ fontSize: "30px" }}>
+                        Licensing{" "}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -80,10 +85,12 @@ const Services = () => {
             <div className="card-small-2 zoom">
               <div className="center">
                 <br></br>
-                <FcProcess fontSize="90px" />
+                <center>
+                  <FcProcess fontSize="90px" />
+                </center>
                 <br></br>
                 <br></br>
-                <h3 className="bold-text">FAST PROCESS</h3>
+                <h3 className=" h3">FAST PROCESS</h3>
                 <br></br>
 
                 <p>
@@ -102,10 +109,12 @@ const Services = () => {
             <div className="card-small-2 zoom">
               <div className="center">
                 <br></br>
-                <TbCertificate fontSize="90px" color="#8D3DAF" />
+                <center>
+                  <TbCertificate fontSize="90px" color="#8D3DAF" />
+                </center>
                 <br></br>
                 <br></br>
-                <h3 className="bold-text">LICENSING</h3>
+                <h3 className=" h3">LICENSING</h3>
                 <br></br>
 
                 <p>
@@ -126,32 +135,12 @@ const Services = () => {
             <div className="card-small-2 zoom mt-5">
               <div className="center">
                 <br></br>
-                <FcProcess fontSize="90px" />
+                <center>
+                  <FcProcess fontSize="90px" />
+                </center>
                 <br></br>
                 <br></br>
-                <h3 className="bold-text">Fast Process</h3>
-                <br></br>
-
-                <p>
-                  Providing insight-driven transformation to investment banks,
-                  wealth and asset managers, exchanges, clearing houses.
-                </p>
-                <br></br>
-                <br></br>
-                <Link to="/" className="button-effect-white mt-3  fill2">
-                  Get in Touch
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 mt-5">
-            <div className="card-small-2 zoom">
-              <div className="center">
-                <br></br>
-                <FcProcess fontSize="90px" />
-                <br></br>
-                <br></br>
-                <h3 className="bold-text">Fast Process</h3>
+                <h3 className="h3">Fast Process</h3>
                 <br></br>
 
                 <p>
@@ -170,10 +159,37 @@ const Services = () => {
             <div className="card-small-2 zoom">
               <div className="center">
                 <br></br>
-                <FcProcess fontSize="90px" />
+                <center>
+                  <FcProcess fontSize="90px" />
+                </center>
                 <br></br>
                 <br></br>
-                <h3 className="bold-text">Fast Process</h3>
+                <h3 className=" h3">Fast Process</h3>
+                <br></br>
+
+                <p>
+                  Providing insight-driven transformation to investment banks,
+                  wealth and asset managers, exchanges, clearing houses.
+                </p>
+                <br></br>
+                <br></br>
+                <Link to="/" className="button-effect-white mt-3  fill2">
+                  Get in Touch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 mt-5">
+            <div className="card-small-2 zoom">
+              <div className="center">
+                <br></br>
+
+                <center>
+                  <FcProcess fontSize="90px" />{" "}
+                </center>
+                <br></br>
+                <br></br>
+                <h3 className=" h3">Fast Process</h3>
                 <br></br>
 
                 <p>
@@ -197,13 +213,13 @@ const Services = () => {
       <div className="container-fluid">
         <div className="row center color4">
           <div className="padding">
-            <h1 className="text-white">That is why we’re here.</h1>
+            <h1 className="text-white h1">That is why we’re here.</h1>
             <br></br>
-            <h5 className="text-white">
+            <p className="text-white h5" style={{ fontWeight: "lighter" }}>
               We make it simpler and easier for you. Before you do anything,
               <br></br>
               talk to one of our Company Formation Specialists.
-            </h5>
+            </p>
             <br></br>
             <br></br>
             <Link to="/" className="button-effect-white  fill2">
@@ -221,16 +237,22 @@ const Services = () => {
         <br></br>
         <br></br>
         <div className="row">
-          <div className="col-lg-4 col-md-6 mt-5">
+          <div className="col-lg-6 col-xl-4 col-md-6 mt-5">
             <center>
               <div className="box">
                 <div className="imgBox">
                   <div className="back-img-3">
-                    <h1 className="heading"> FREEZONE </h1>
+                    <h1 className="heading h1"> FREEZONE </h1>
+                    <center>
+                      <h1 className="display h1">
+                        {" "}
+                        <BsArrowDownRightSquare />
+                      </h1>
+                    </center>
                   </div>
                 </div>
                 <div className="content shadow">
-                  <h2 className="bold-text">
+                  <h2 className="bold-text d-flex">
                     <BsBuilding
                       fontSize="40px"
                       className="mx-2 bold-text"
@@ -244,16 +266,24 @@ const Services = () => {
               </div>
             </center>
           </div>
-          <div className="col-lg-4 col-md-6 mt-5 center">
+          <div className="col-lg-6 col-xl-4 col-md-6  mt-5 center">
             <center>
               <div className="box">
                 <div className="imgBox">
                   <div className="back-img-2">
-                    <h1 className="heading">MAINLAND </h1>
+                    <h1 className="heading h1" style={{}}>
+                      MAINLAND{" "}
+                    </h1>
+                    <center>
+                      <h1 className="display h1">
+                        {" "}
+                        <BsArrowDownRightSquare />
+                      </h1>
+                    </center>
                   </div>
                 </div>
                 <div className="content shadow">
-                  <h2 className="bold-text">
+                  <h2 className="bold-text d-flex">
                     <BiBuildings
                       fontSize="40px"
                       className="mx-2 bold-text"
@@ -267,16 +297,22 @@ const Services = () => {
               </div>
             </center>
           </div>
-          <div className="col-lg-4 col-md-6 mt-5 center">
+          <div className="col-lg-6 col-xl-4 col-md-6  mt-5 center">
             <center>
               <div className="box">
                 <div className="imgBox">
                   <div className="back-img-1">
-                    <h1 className="heading">OFFSHORE </h1>
+                    <h1 className="heading h1">OFFSHORE </h1>
+                    <center>
+                      <h1 className="display h1">
+                        {" "}
+                        <BsArrowDownRightSquare />
+                      </h1>
+                    </center>
                   </div>
                 </div>
                 <div className="content shadow">
-                  <h2 className="bold-text">
+                  <h2 className="bold-text d-flex">
                     <BiBuilding
                       fontSize="40px"
                       className="mx-2 "
@@ -309,10 +345,10 @@ const Services = () => {
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >
-            <h1 className="color2" style={{ fontWeight: "bold" }}>
+            <br></br>
+            <h1 className="color2 h1" style={{ fontWeight: "bold" }}>
               Start a Business in Dubai & UAE with Kiltons
             </h1>
-
             <p className="text-secondary">
               Kiltons provide a wide range of business setup services in Dubai
               and UAE for startups, medium enterprises and large business
@@ -329,7 +365,8 @@ const Services = () => {
               account opening, PRO Services, Company liquidation and many more.
             </p>
             <br></br>
-            <Link to="/" className="button-effect-white  fill2">
+            <br></br>
+            <Link to="/" className="button-effect-white  fill2 ">
               Get in Touch
             </Link>
           </div>
@@ -351,34 +388,46 @@ const Services = () => {
         <br></br>
         <div className="row" data-aos="fade-up-left" data-aos-duration="3000">
           <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
-            <TbCertificate className="icon-service" />
-            <h4 className="text-secondary">TRADE</h4>
-            <h3 className="bold-text color-hover">LICENSE</h3>
+            <center>
+              <TbCertificate className="icon-service" />
+            </center>
+            <h4 className="text-secondary h4">TRADE</h4>
+            <h3 className="bold-text color-hover h3">LICENSE</h3>
           </div>
           <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
-            <FaUserShield className="icon-service" />
-            <h4 className="text-secondary">FIND A</h4>
-            <h3 className="bold-text color-hover">SPONSOR</h3>
+            <center>
+              <FaUserShield className="icon-service" />
+            </center>
+            <h4 className="text-secondary h4">FIND A</h4>
+            <h3 className="bold-text color-hover h3">SPONSOR</h3>
           </div>
           <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
-            <GiTakeMyMoney className="icon-service" />
-            <h4 className="text-secondary">COMPANY</h4>
-            <h3 className="bold-text ">LIQUIDATION</h3>
+            <center>
+              <GiTakeMyMoney className="icon-service" />
+            </center>
+            <h4 className="text-secondary h4">COMPANY</h4>
+            <h3 className="bold-text h3 ">LIQUIDATION</h3>
           </div>
           <div className="col-lg-2 col-md-4 center zoom mt-2 color-hover">
-            <FaShieldAlt className="icon-service" />
-            <h4 className="text-secondary">BRAND</h4>
-            <h3 className="bold-text color-hover">PROTECTION</h3>
+            <center>
+              <FaShieldAlt className="icon-service" />
+            </center>
+            <h4 className="text-secondary h4">BRAND</h4>
+            <h3 className="bold-text color-hover h3">PROTECTION</h3>
           </div>
           <div className="col-lg-2 col-md-4 center zoom  mt-2 color-hover">
-            <BsBank2 className="icon-service" />
-            <h5 className="text-secondary"> BANK ACCOUNT</h5>
-            <h3 className="bold-text color-hover">OPENING</h3>
+            <center>
+              <BsBank2 className="icon-service" />
+            </center>
+            <h5 className="text-secondary h4"> BANK ACCOUNT</h5>
+            <h3 className="bold-text color-hover h3">OPENING</h3>
           </div>
           <div className="col-lg-2 col-md-4 center zoom  mt-2 color-hover">
-            <FaUsers className="icon-service" />
-            <h4 className="text-secondary"> PRO</h4>
-            <h3 className="bold-text color-hover">SERVICES</h3>
+            <center>
+              <FaUsers className="icon-service" />
+            </center>
+            <h4 className="text-secondary h4"> PRO</h4>
+            <h3 className="bold-text color-hover h3">SERVICES</h3>
           </div>
         </div>
       </div>
@@ -389,64 +438,76 @@ const Services = () => {
       <br></br>
       <br></br>
       <br></br>
-      <div
-        className="container-fluid"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-        style={{
-          background: "rgb(114 36 147)",
-        }}
-      >
-        <br></br>
-        <br></br>
-        <br></br>
 
+      <br></br>
+
+      <div className="back-img-5">
         <div className="row">
-          <div className="col-lg-4 col-md-4" style={{ padding: "0px" }}>
-            <div className="back-img-4">
+          <div
+            className="col-lg-4 col-md-12"
+            data-aos="fade-up-right"
+            data-aos-duration="3000"
+          >
+            <div className="back zoom ">
               <div className="border-class">
-                <h2>Why ?</h2>
+                <h2 className="bold-text h2">Why ?</h2>
                 <br></br>
 
-                <h5>
+                <h5 className="h5">
                   Dubai has undergone a steady metamorphosis from a Petroleum
                   dependent economy to an innovation and
                   technology-driven........
                 </h5>
                 <br></br>
-                <h5>Know more {">>"}</h5>
+
+                <h5 className="zoom h5">
+                  Know more <span className="display-2 ">{">>>>"} </span>{" "}
+                </h5>
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4" style={{ padding: "0px" }}>
-            <div className="back-img-4">
+          <div
+            className="col-lg-4 col-md-12"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div className="back zoom">
               <div className="border-class">
-                <h2>Why ?</h2>
+                <h2 className="bold-text h2">Where ?</h2>
                 <br></br>
 
-                <h5>
-                  Dubai has undergone a steady metamorphosis from a Petroleum
-                  dependent economy to an innovation and
-                  technology-driven........
+                <h5 className="h5">
+                  You have a plethora of business investment opportunities in
+                  Dubai. One of the major prerequisites that every investor
+                  or..........
                 </h5>
                 <br></br>
-                <h5>Know more {">>"}</h5>
+                <h5 className="zoom h5">
+                  Know more <span className="display-2">{">>>>"} </span>{" "}
+                </h5>
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4" style={{ padding: "0px" }}>
-            <div className="back-img-4">
+          <div
+            className="col-lg-4 col-md-12"
+            data-aos="fade-up-left"
+            data-aos-duration="3000"
+          >
+            <div className="back zoom">
               <div className="border-class">
-                <h2>Why ?</h2>
+                <h2 className="bold-text h2">How?</h2>
                 <br></br>
 
-                <h5>
-                  Dubai has undergone a steady metamorphosis from a Petroleum
-                  dependent economy to an innovation and
-                  technology-driven........
+                <h5 className="h5">
+                  Both economic and political stability plays a vital role in
+                  the overall progress of any region or country. Dubai has a
+                  very professional...........
                 </h5>
                 <br></br>
-                <h5>Know more {">>"}</h5>
+                <h5 className="zoom h5">
+                  <ChakkraModal color="" />
+                  Know more <span className="display-2">{">>>>"} </span>{" "}
+                </h5>
               </div>
             </div>
           </div>
@@ -455,6 +516,7 @@ const Services = () => {
         <br></br>
         <br></br>
       </div>
+
       <br></br>
       <br></br>
       <br></br>
@@ -479,9 +541,9 @@ const Services = () => {
             <br></br>
             <br></br>
 
-            <h1 className="color2 bold-text">Office Spaces</h1>
+            <h1 className="color2 bold-text h1">Office Spaces</h1>
             <br></br>
-            <p>
+            <p className="text-secondary size-para">
               Starting a business in Dubai or anywhere in UAE with Kiltons in
               simple and time-saving. We help you set up a company in a free
               zone, on mainland or offshore. “According to the data revealed by
@@ -501,7 +563,7 @@ const Services = () => {
               services across the Emirates.
             </p>
             <br></br>
-
+            <br></br>
             <Link to="/" className="button-effect-white  fill2">
               Get in Touch
             </Link>
@@ -518,9 +580,9 @@ const Services = () => {
 
       <div className="container-fluid">
         <div className="mx-5">
-          <h1 className="bold-text color">Testimonials</h1>
+          <h1 className="bold-text color h1">Testimonials</h1>
           <br></br>
-          <h5>
+          <h5 className="h5 ">
             We regard the client testimonial as a treasured token of
             appreciation that signifies our value as a Business Setup service
             provider. As you all know credible testimonials build “Trust” – one

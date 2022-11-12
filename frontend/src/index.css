@@ -6,6 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
@@ -113,6 +118,9 @@ code {
   border-radius: 15px;
 }
 
+.size-para {
+  font-size: 17px;
+}
 
 .color {
   color: var(--main-color);
@@ -121,6 +129,13 @@ code {
 
 .center {
   text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 100%;
+  }
+
 }
 
 .bold-text {

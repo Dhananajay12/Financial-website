@@ -2,7 +2,9 @@
 
 .icon-social {
     text-align: center;
-
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .register-free {
@@ -102,6 +104,13 @@
 
 .border-red {
     border-radius: 0px 0px 8px 8px;
+}
+
+@media (min-width:1200px) {
+    .padding2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 

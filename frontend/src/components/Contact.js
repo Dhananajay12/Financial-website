@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <div className="container-fluid color4 contact-us">
-        <h1 className="bold-text mx-2 text-white">Get Started Today!</h1>
+        <h2 className="bold-text mx-2 text-white h1">Get Started Today!</h2>
         <br></br>
         <div className="row">
           <div className="col-md-6 col-lg-6">
@@ -86,18 +86,18 @@ const Contact = () => {
           </p>
           <p className="mx-2">
             This site is protected by reCAPTCHA and the Google
-            <Link to="/" className="mx-1">
+            <Link to="/" className="mx-1 text-primary">
               Privacy Policy{" "}
             </Link>
             and{" "}
-            <Link to="/" className="mx-1">
+            <Link to="/" className="mx-1 text-primary">
               Terms{" "}
             </Link>{" "}
             of Service apply.
           </p>
-
+          <br></br>
           <button
-            className="button-effect-white  fill2 mx-2 "
+            className="button-effect-white  fill2 mx-2 mt-3"
             style={{ width: "15rem" }}
           >
             CONTACT NOW
