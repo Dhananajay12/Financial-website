@@ -33,7 +33,7 @@ const Services = () => {
   }, []);
   return (
     <>
-      <div className="container">
+      <div className="container-fluid padding3">
         {" "}
         <div className="center">
           <p className="color2 h1 bold-text">What Services We Offers</p>
@@ -335,10 +335,8 @@ const Services = () => {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
 
-      <br></br>
-      <div className="container">
+      <div className="container-fluid padding3">
         <div className="row">
           <div
             className="col-lg-6 col-md-6"
@@ -442,12 +440,15 @@ const Services = () => {
       <br></br>
 
       <div className="back-img-5">
+        <p className="h1  mx-1  bold-text">Business Setup Guide</p>
+        <br></br>
         <div className="row">
           <div
-            className="col-lg-4 col-md-12"
+            className="col-lg-4 col-md-12 mt-2"
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >
+            {/* <h1 className="h1">?</h1> */}
             <div className="back zoom ">
               <div className="border-class">
                 <h2 className="bold-text h2">Why ?</h2>
@@ -460,14 +461,14 @@ const Services = () => {
                 </h5>
                 <br></br>
 
-                <h5 className="zoom h5">
+                <h5 className="h5">
                   Know more <span className="display-2 ">{">>>>"} </span>{" "}
                 </h5>
               </div>
             </div>
           </div>
           <div
-            className="col-lg-4 col-md-12"
+            className="col-lg-4 col-md-12 mt-2"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -482,20 +483,20 @@ const Services = () => {
                   or..........
                 </h5>
                 <br></br>
-                <h5 className="zoom h5">
+                <h5 className="h5">
                   Know more <span className="display-2">{">>>>"} </span>{" "}
                 </h5>
               </div>
             </div>
           </div>
           <div
-            className="col-lg-4 col-md-12"
+            className="col-lg-4 col-md-12 mt-2"
             data-aos="fade-up-left"
             data-aos-duration="3000"
           >
             <div className="back zoom">
               <div className="border-class">
-                <h2 className="bold-text h2">How?</h2>
+                <h2 className="bold-text h2">How ?</h2>
                 <br></br>
 
                 <h5 className="h5">
@@ -504,7 +505,7 @@ const Services = () => {
                   very professional...........
                 </h5>
                 <br></br>
-                <h5 className="zoom h5">
+                <h5 className=" h5">
                   <ChakkraModal color="" />
                   Know more <span className="display-2">{">>>>"} </span>{" "}
                 </h5>
@@ -513,15 +514,13 @@ const Services = () => {
           </div>
         </div>
         <br></br>
-        <br></br>
-        <br></br>
       </div>
 
       <br></br>
       <br></br>
       <br></br>
 
-      <div className="container">
+      <div className="container-fluid padding3">
         <div className="row">
           <div
             className="col-lg-4 "

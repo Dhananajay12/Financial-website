@@ -52,14 +52,15 @@
 
 .back-img-5 {
     background-image: url("/src/Images/b4.png");
+    /* background: var(--main-color); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
     color: white;
-    padding: 30px 40px;
-    height: 26rem;
+    padding: 30px 30px;
+    height: 100%;
 }
 
 
@@ -80,9 +81,9 @@
 
 .border-class {
     border: 2px solid white;
-    height: 22rem;
+    height: 18rem;
     border-radius: 10px;
-    padding: 10% 4%;
+    padding: 7% 4%;
 }
 
 
@@ -394,4 +395,13 @@
     display: inline-block;
     transition: 1s;
     font-size: 20px;
+}
+
+.back {
+    background: rgba(117, 62, 141, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }

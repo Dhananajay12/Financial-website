@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./modal.css";
 import {
   Modal,
   ModalOverlay,
@@ -11,12 +11,21 @@ import {
   Button,
   useDisclosure,
 } from "@chakra-ui/react";
-const ChakkraModal = () => {
+const ModalContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div>
       <Button onClick={onOpen} className="text-dark">
-        Calculate
+        <div className="card-small card color">
+          {" "}
+          <p className="mx-2">GET EXPERTS ADVICE NOW</p>
+          <div className="go-corner">
+            <div className="go-arrow">→</div>
+          </div>
+        </div>
+
+        <br></br>
+        <br></br>
       </Button>
       <Modal onClose={onClose} isOpen={isOpen} size="6xl" isCentered>
         <ModalOverlay />
@@ -110,4 +119,4 @@ const ChakkraModal = () => {
   );
 };
 
-export default ChakkraModal;
+export default ModalContact;

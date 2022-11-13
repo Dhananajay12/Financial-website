@@ -10,6 +10,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import { RiArrowDropRightFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -36,26 +37,26 @@ const Navbar = () => {
 
   return (
     <section className="header ">
-      <a href="/" className="">
+      <Link to="/" className="">
         <img src={logo} alt="error" className="logo" />
-      </a>
+      </Link>
 
       <nav className={showMediaIcons ? "navbar active" : "navbar"}>
         <ul className="menu">
           <li>
             <div className="dropdown">
-              <a href="/" className="dropbtn">
-                Business-Guide <MdArrowDropDown />
-              </a>
+              <Link to="/" className="dropbtn d-flex">
+                Business-Guide <MdArrowDropDown className="mt-1" />
+              </Link>
               <div className="dropdown-content">
                 <li>
-                  <a href="/">Where</a>{" "}
+                  <Link to="/where">Where</Link>{" "}
                 </li>
                 <li>
-                  <a href="/">How</a>{" "}
+                  <Link to="/how">How</Link>{" "}
                 </li>
                 <li>
-                  <a href="/">May</a>{" "}
+                  <Link to="/">May</Link>{" "}
                 </li>
               </div>
             </div>
@@ -63,62 +64,62 @@ const Navbar = () => {
 
           <li>
             <div className="dropdown">
-              <a href="/" className="dropbtn">
-                Licensing <MdArrowDropDown />
-              </a>
+              <Link to="/" className="dropbtn d-flex">
+                Licensing <MdArrowDropDown className="mt-1" />
+              </Link>
               <div className="dropdown-content">
                 <li className="dropdown2">
-                  <a href="/" className="d-flex">
+                  <Link to="/" className="d-flex">
                     Mainland License{" "}
                     <RiArrowDropRightFill fontSize="20px" className="mt-1 " />{" "}
-                  </a>
+                  </Link>
                   <ul className="dropdown-content2">
                     <li>
-                      <a href="/">Professional</a>{" "}
+                      <Link to="/">Professional</Link>{" "}
                     </li>
                     <li>
-                      <a href="/">Commercial License</a>{" "}
+                      <Link to="/">Commercial License</Link>{" "}
                     </li>
                     <li>
-                      <a href="/">Industrial License</a>{" "}
+                      <Link to="/">Industrial License</Link>{" "}
                     </li>
                     <li>
-                      <a href="/">Tourism License</a>{" "}
+                      <Link to="/">Tourism License</Link>{" "}
                     </li>
                     <li>
-                      <a href="/">E Trader Lincense</a>{" "}
+                      <Link to="/">E Trader Lincense</Link>{" "}
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="/">Free zone License</a>{" "}
+                  <Link to="/">Free zone License</Link>{" "}
                 </li>
                 <li>
-                  <a href="/">Offshore License</a>{" "}
+                  <Link to="/">Offshore License</Link>{" "}
                 </li>
               </div>
             </div>
           </li>
           <li>
             <div className="dropdown">
-              <a href="/" className="dropbtn">
-                Visa <MdArrowDropDown />
-              </a>
+              <Link to="/" className="dropbtn d-flex">
+                Visa <MdArrowDropDown className="mt-1" />
+              </Link>
               <div className="dropdown-content">
                 <li>
-                  <a href="/">Dubai-Business visa</a>{" "}
+                  <Link to="/">Dubai-Business visa</Link>{" "}
                 </li>
                 <li>
-                  <a href="/">Dubai-Investi visa</a>{" "}
+                  <Link to="/">Dubai-Investi visa</Link>{" "}
                 </li>
               </div>
             </div>
           </li>
           <li>
-            <a href="/">About US </a>{" "}
+            <Link to="/">About US </Link>{" "}
           </li>
           <li>
-            <a href="/">Blog </a>{" "}
+            <Link to="/">Blog </Link>{" "}
           </li>
         </ul>
 

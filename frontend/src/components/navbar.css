@@ -56,9 +56,9 @@
 }
 
 
-li:hover {
-    /* color: rgb(231, 154, 53) !important; */
-}
+/* li:hover {
+    color: rgb(231, 154, 53) !important;
+} */
 
 .navbar {
 
@@ -216,6 +216,7 @@ menu>a {
 
 .menu a:hover {
     color: var(--main-color);
+    font-weight: bold;
 }
 
 ul {

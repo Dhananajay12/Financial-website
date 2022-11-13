@@ -19,7 +19,7 @@ code {
 
 
 :root {
-  --main-color: #8D3DAF;
+  --main-color: rgb(114 36 147);
   --black: #222;
   --white: #fff;
   --light-black: #777;
@@ -59,6 +59,13 @@ code {
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
+}
+
+@media (min-width:1200px) {
+  .padding3 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
 
 .fill:hover,
@@ -153,9 +160,10 @@ code {
 }
 
 .color2 {
-  background: rgb(114 36 147);
-  background: linear-gradient(to right, #a150c9 0%, #8D3DAF 100%);
+  /* background: rgb(114 36 147); */
+  background: linear-gradient(to right, #853da8 0%, #6e208f 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

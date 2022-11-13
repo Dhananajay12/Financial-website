@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import "./need.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; //
-
 import { CgArrowLeft, CgArrowLeftO } from "react-icons/cg";
 import { BsArrowLeftCircle, BsFillArrowLeftCircleFill } from "react-icons/bs";
+import ModalContact from "../components/ModalContact";
 
 const Needs = () => {
   const [showComponent, setshowComponent] = useState("start");
@@ -32,7 +32,7 @@ const Needs = () => {
       <div>
         {showComponent === "start" && (
           <>
-            <div className="container">
+            <div className="container-fluid padding3">
               <div className="row">
                 <div
                   className="col-md-4 mt-2"
@@ -86,7 +86,7 @@ const Needs = () => {
         )}
         {showComponent === "add-trip" && (
           <div
-            className="container  "
+            className="container-fluid padding3 "
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -150,7 +150,7 @@ const Needs = () => {
               </div>
               <center>
                 <div
-                  className="col-md-6 col-lg-4"
+                  className="col-md-6 col-lg-4 "
                   data-aos="fade-up"
                   data-aos-duration="3000"
                 >
@@ -178,7 +178,7 @@ const Needs = () => {
         )}
         {showComponent === "company" && (
           <div
-            className="container"
+            className="container-fluid padding3"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -235,7 +235,7 @@ const Needs = () => {
         )}
         {showComponent === "sub-third" && (
           <div
-            className="container"
+            className="container-fluid padding3"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -331,7 +331,7 @@ const Needs = () => {
         )}
         {showComponent === "third" && (
           <div
-            className="container"
+            className="container-fluid padding3"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -343,26 +343,27 @@ const Needs = () => {
               <br></br>
               <br></br>
               <center>
-                <div className="col-md-4">
-                  <div
+                <div className="col-md-4" style={{ height: "100%" }}>
+                  <ModalContact />
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <button
                     onClick={() => setshowComponent("start")}
-                    className="card-small card color"
+                    className="button-effect fill"
                   >
-                    {" "}
-                    <p>GET EXPERTS ADVICE NOW</p>
-                    <div className="go-corner">
-                      <div className="go-arrow">→</div>
-                    </div>
-                  </div>
+                    Back to Home
+                  </button>
                 </div>
-                <br></br>
-                <br></br>
-                <button
-                  className="button-effect fill"
-                  onClick={() => setshowComponent("start")}
-                >
-                  BACK TO HOME
-                </button>
               </center>
             </div>
           </div>

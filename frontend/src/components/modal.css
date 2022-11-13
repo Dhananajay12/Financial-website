@@ -14,27 +14,27 @@
 
 /* Card---small---- */
 
-/* .icons {
-    color: white !important;
+.icons {
+    /* color: white !important;
     border: 1px solid white;
     padding: 11px;
-    font-size: 60px;
+    font-size: 50px;
     border-radius: 40px;
-    margin: 5px !important;
-} */
+    margin: 5px !important; */
+}
 
-.div-icons {
+/* .div-icons {
     width: 5rem;
     margin-top: auto;
     margin-bottom: auto;
-}
+} */
 
 
 .icons-small {
     background-color: var(--main-color);
     color: white;
     width: 3rem;
-    font-size: 50px !important;
+    font-size: 35px;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
@@ -96,13 +96,14 @@
 
 .card-small:before {
     content: "";
+
     position: absolute;
     z-index: -1;
     top: -16px;
     right: -16px;
     background: var(--main-color);
     height: 32px;
-    width: 50px !important;
+    width: 45px;
     border-radius: 32px;
     transform: scale(1);
     transform-origin: 50% 50%;
@@ -134,8 +135,3 @@
 .tran {
     transition: 2s;
 }
-
-
-
-
-/*------ card-style-end------ */
