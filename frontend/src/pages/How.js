@@ -1,9 +1,19 @@
 import React from "react";
 import img from "../Images/b1.png";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  Box,
+  AccordionIcon,
+  AccordionPanel,
+} from "@chakra-ui/react";
+
+// import { AccordionIcon } from "@chakra-ui/icons";
 const How = () => {
   return (
     <>
-    <br></br>
+      <br></br>
       <div className="container-fluid padding3">
         <div className="row">
           <div className="col-md-6 col-lg-4 col-xl-4">
@@ -48,6 +58,145 @@ const How = () => {
             <br></br>
             <button className="button-effect-white fill2">CONTACT US</button>
           </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <div className="container-fluid padding3 ">
+        <p className="h1 bold-text color">
+          Here are the necessary formalities to set up a business in Dubai.{" "}
+        </p>
+        <br></br>
+        <div className="shadow">
+          <Accordion defaultIndex={[0]} allowMultiple>
+            <AccordionItem className="drop-para">
+              <h2>
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    className="bold-text color font2"
+                  >
+                    Section 1 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem className="drop-para">
+              <h2>
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    className="bold-text color font2"
+                  >
+                    Section 2 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem className="drop-para">
+              <h2>
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    className="bold-text color font2"
+                  >
+                    Section 2 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem className="drop-para">
+              <h2>
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    className="bold-text color font2"
+                  >
+                    Section 2 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem className="drop-para">
+              <h2>
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    className="bold-text color font2"
+                  >
+                    Section 2 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem className="drop-para">
+              <h2 className="h2">
+                <AccordionButton>
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    className="bold-text color font2"
+                  >
+                    Section 2 title
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
     </>

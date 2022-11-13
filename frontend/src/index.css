@@ -217,3 +217,29 @@ code {
 .back-color {
   background-color: var(--main-color);
 }
+
+
+
+
+
+
+
+/* --------how page------ */
+
+
+.font2 {
+  font-size: 22px !important;
+}
+
+.drop-para {
+  border: 1px solid purple !important;
+  border-radius: 10px !important;
+  padding: 1% !important;
+  margin-top: 1rem;
+}
+
+.shadow {
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow) !important;
+}

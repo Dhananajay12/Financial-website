@@ -228,7 +228,6 @@ const Footer = () => {
               <AiFillGithub className="icons zoom" />
               <AiOutlineGoogle className="icons zoom" />
             </div>
-
             <div className="icon-social color5">
               <h5 className="padding text-white h5">
                 @ 2022 Copyright:Razer.c53.com
