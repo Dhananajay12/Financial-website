@@ -93,18 +93,21 @@
     font-size: 20px !important;
     left: auto;
     color: grey !important;
-    border: 1px solid;
+
     padding: 5px;
+    display: none;
 }
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     font-size: 20px !important;
+    display: none;
 }
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
     font-size: 20px !important;
+    display: none;
 }
 
 .icon-service {

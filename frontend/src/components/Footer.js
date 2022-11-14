@@ -1,6 +1,6 @@
 import "./footer.css";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { RiShoppingCartFill } from "react-icons/ri";
+import { BsBuilding } from "react-icons/bs";
 import {
   AiOutlineInstagram,
   AiOutlineSkype,
@@ -26,7 +26,7 @@ const Footer = () => {
               <div className="col-sm-12 col-md-6 col-lg-3 center2 mt-1 mb-5">
                 <ul>
                   <h3 className="text-white mt-4 h3 d-flex">
-                    <RiShoppingCartFill /> RazeEcom.{" "}
+                    <BsBuilding className="mx-1" /> RazeEcom.{" "}
                   </h3>
                   <hr className="color-hr"></hr>
 
@@ -37,13 +37,9 @@ const Footer = () => {
                     Place. RAZEECOM. Is The Ultimate Destination For Fashion And
                     Lifestyle, Being Host To A Wide Array Of Merchandise
                     Including Clothing, Footwear, Accessories, Jewellery,
-                    Personal Care Products And More. It Is Time To Redefine Your
-                    Style Statement With Our Treasure-Trove Of Trendy Items. Our
-                    Online Store Brings You The Latest In Designer Products
-                    Straight Out Of Fashion Houses. You Can Shop Online At
-                    RAZEECOM.
+                    Personal Care Products And More.
                   </p>
-                  <button className="button-effect-white  fill2  mt-4">
+                  <button className="button-effect-white3  fill4  mt-4">
                     Know More
                   </button>
                 </ul>
@@ -207,7 +203,7 @@ const Footer = () => {
                 </h3>
                 <br></br>
 
-                <button className="button-effect-white  fill2 mx-2 ">
+                <button className="button-effect-white3  fill4 mx-2 ">
                   Click Me
                 </button>
               </div>

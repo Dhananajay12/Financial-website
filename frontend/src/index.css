@@ -66,6 +66,11 @@ code {
     padding-left: 8%;
     padding-right: 8%;
   }
+
+  .padding-4 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 .fill:hover,
@@ -77,7 +82,7 @@ code {
   color: #8D3DAF;
   transition: 0.50s;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 35px !important;
   background: white;
   border: 2px solid;
   font: inherit;
@@ -85,7 +90,7 @@ code {
   line-height: 1;
   font-weight: bold;
 
-  padding: 1em 2em;
+  padding: 2rem 2rem !important;
 }
 
 .button-effect-white:hover {
@@ -94,14 +99,64 @@ code {
   font-weight: bold;
 }
 
-.button-effect-white :focus {
+/* .button-effect-white :focus {
   border-color: #ff6699;
   color: #ff6699;
   font-weight: bold;
+} */
+
+.fill2:hover {
+  box-shadow: inset 0 0 0 2em #7a3697;
 }
 
-.fill2:hover,
-.fill2:focus {
+.button-effect-white2 {
+  color: #8D3DAF;
+  transition: 0.50s;
+  text-decoration: none;
+  border-radius: 35px !important;
+  background: white;
+  border: 2px solid;
+  font: inherit;
+  font-weight: bold;
+  line-height: 1;
+  font-weight: bold;
+
+  padding: 1.2rem 1.2rem !important;
+}
+
+.button-effect-white2:hover {
+  border-color: white;
+  color: white;
+  font-weight: bold;
+}
+
+.fill3:hover {
+  box-shadow: inset 0 0 0 2em #7a3697;
+}
+
+
+.button-effect-white3 {
+  color: #8D3DAF;
+  transition: 0.50s;
+  text-decoration: none;
+  border-radius: 35px !important;
+  background: white;
+  border: 2px solid;
+  font: inherit;
+  font-weight: bold;
+  line-height: 1;
+  font-weight: bold;
+
+  padding: 1.2rem 1.2rem !important;
+}
+
+.button-effect-white3:hover {
+  border-color: white;
+  color: white;
+  font-weight: bold;
+}
+
+.fill4:hover {
   box-shadow: inset 0 0 0 2em #7a3697;
 }
 
@@ -219,11 +274,6 @@ code {
 }
 
 
-
-
-
-
-
 /* --------how page------ */
 
 
@@ -242,4 +292,26 @@ code {
   padding: 1%;
   border-radius: 10px;
   box-shadow: var(--box-shadow) !important;
+}
+
+
+
+
+/* --------where--page----- */
+
+.just-con {
+  justify-content: space-between !important;
+  display: flex;
+}
+
+@media (max-width:620px) {
+  .just-con {
+
+    display: inline-block;
+  }
+
+  .text-block {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
 }

@@ -26,6 +26,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Pagination, Navigation } from "swiper";
 import ChakkraModal from "./ChakkraModal";
+import ModalContact2 from "../components/ModalContact2";
 
 const Services = () => {
   useEffect(() => {
@@ -90,7 +91,7 @@ const Services = () => {
                 </center>
                 <br></br>
                 <br></br>
-                <h3 className=" h3">FAST PROCESS</h3>
+                <h3 className=" h3 bold-text">FAST PROCESS</h3>
                 <br></br>
 
                 <p>
@@ -98,10 +99,11 @@ const Services = () => {
                   wealth and asset managers, exchanges, clearing houses.
                 </p>
                 <br></br>
+                <ModalContact2 />
                 <br></br>
-                <Link to="/" className="button-effect-white mt-3  fill2">
+                {/* <Link to="/" className="button-effect-white mt-3  fill2">
                   Get in Touch
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -114,7 +116,7 @@ const Services = () => {
                 </center>
                 <br></br>
                 <br></br>
-                <h3 className=" h3">LICENSING</h3>
+                <h3 className=" h3 bold-text">LICENSING</h3>
                 <br></br>
 
                 <p>
@@ -122,10 +124,11 @@ const Services = () => {
                   wealth and asset managers, exchanges, clearing houses.
                 </p>
                 <br></br>
+                <ModalContact2 />
                 <br></br>
-                <Link to="/" className="button-effect-white mt-3  fill2">
+                {/* <Link to="/" className="button-effect-white mt-3  fill2">
                   Get in Touch
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -140,18 +143,20 @@ const Services = () => {
                 </center>
                 <br></br>
                 <br></br>
-                <h3 className="h3">Fast Process</h3>
+                <h3 className="h3 bold-text">Fast Process</h3>
                 <br></br>
 
                 <p>
                   Providing insight-driven transformation to investment banks,
                   wealth and asset managers, exchanges, clearing houses.
                 </p>
+
                 <br></br>
+                <ModalContact2 />
                 <br></br>
-                <Link to="/" className="button-effect-white mt-3  fill2">
+                {/* <Link to="/" className="button-effect-white mt-3  fill2">
                   Get in Touch
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -164,7 +169,7 @@ const Services = () => {
                 </center>
                 <br></br>
                 <br></br>
-                <h3 className=" h3">Fast Process</h3>
+                <h3 className=" h3 bold-text">Fast Process</h3>
                 <br></br>
 
                 <p>
@@ -172,10 +177,11 @@ const Services = () => {
                   wealth and asset managers, exchanges, clearing houses.
                 </p>
                 <br></br>
+                <ModalContact2 />
                 <br></br>
-                <Link to="/" className="button-effect-white mt-3  fill2">
+                {/* <Link to="/" className="button-effect-white mt-3  fill2">
                   Get in Touch
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -189,7 +195,7 @@ const Services = () => {
                 </center>
                 <br></br>
                 <br></br>
-                <h3 className=" h3">Fast Process</h3>
+                <h3 className=" h3 bold-text">Fast Process</h3>
                 <br></br>
 
                 <p>
@@ -197,10 +203,12 @@ const Services = () => {
                   wealth and asset managers, exchanges, clearing houses.
                 </p>
                 <br></br>
-                <br></br>
-                <Link to="/" className="button-effect-white mt-3  fill2">
+
+                {/* <Link to="/" className="button-effect-white mt-3  fill2">
                   Get in Touch
-                </Link>
+                </Link> */}
+                <ModalContact2 />
+                <br></br>
               </div>
             </div>
           </div>
@@ -211,7 +219,11 @@ const Services = () => {
       <br></br>
       <br></br>
       <div className="container-fluid">
-        <div className="row center color4">
+        <div
+          className="row center color4"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div className="padding">
             <h1 className="text-white h1">That is why we’re here.</h1>
             <br></br>
@@ -221,11 +233,11 @@ const Services = () => {
               talk to one of our Company Formation Specialists.
             </p>
             <br></br>
-            <br></br>
-            <Link to="/" className="button-effect-white  fill2">
+
+            {/* <Link to="/" className="button-effect-white  fill2">
               Get in Touch
-            </Link>
-            <br></br>
+            </Link> */}
+            <ModalContact2 />
             <br></br>
           </div>
         </div>
@@ -363,10 +375,11 @@ const Services = () => {
               account opening, PRO Services, Company liquidation and many more.
             </p>
             <br></br>
-            <br></br>
-            <Link to="/" className="button-effect-white  fill2 ">
+
+            <ModalContact2 />
+            {/* <Link to="/" className="button-effect-white  fill2 ">
               Get in Touch
-            </Link>
+            </Link> */}
           </div>
 
           <div
@@ -439,10 +452,10 @@ const Services = () => {
 
       <br></br>
 
-      <div className="back-img-5">
+      <div className="back-img-5" data-aos="fade-up" data-aos-duration="3000">
         <p className="h1  mx-1  bold-text">Business Setup Guide</p>
         <br></br>
-        <div className="row">
+        <div className="row ">
           <div
             className="col-lg-4 col-md-12 mt-2"
             data-aos="fade-up-right"
@@ -460,10 +473,10 @@ const Services = () => {
                   technology-driven........
                 </h5>
                 <br></br>
-
-                <h5 className="h5">
+                <ChakkraModal />
+                {/* <h5 className="h5">
                   Know more <span className="display-2 ">{">>>>"} </span>{" "}
-                </h5>
+                </h5> */}
               </div>
             </div>
           </div>
@@ -483,9 +496,10 @@ const Services = () => {
                   or..........
                 </h5>
                 <br></br>
-                <h5 className="h5">
+                <ChakkraModal />
+                {/* <h5 className="h5">
                   Know more <span className="display-2">{">>>>"} </span>{" "}
-                </h5>
+                </h5> */}
               </div>
             </div>
           </div>
@@ -505,10 +519,9 @@ const Services = () => {
                   very professional...........
                 </h5>
                 <br></br>
-                <h5 className=" h5">
-                  <ChakkraModal color="" />
-                  Know more <span className="display-2">{">>>>"} </span>{" "}
-                </h5>
+                <ChakkraModal />
+                <br></br>
+                {/* Know more <span className="display-2">{">>>>"} </span>{" "} */}
               </div>
             </div>
           </div>
@@ -563,9 +576,10 @@ const Services = () => {
             </p>
             <br></br>
             <br></br>
-            <Link to="/" className="button-effect-white  fill2">
+            <ModalContact2 />
+            {/* <Link to="/" className="button-effect-white  fill2">
               Get in Touch
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -577,7 +591,7 @@ const Services = () => {
       <br></br>
       <br></br>
 
-      <div className="container-fluid">
+      <div className="container-fluid padding3">
         <div className="mx-5">
           <h1 className="bold-text color h1">Testimonials</h1>
           <br></br>

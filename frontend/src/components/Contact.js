@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
-      <div className="container-fluid color4 contact-us">
+      <div className="container-fluid color4 padding3">
+        <br></br>
+        <br></br>
         <h2 className="bold-text mx-2 text-white h1">Get Started Today!</h2>
         <br></br>
         <div className="row">
@@ -103,6 +105,8 @@ const Contact = () => {
             CONTACT NOW
           </button>
         </div>
+        <br></br>
+        <br></br>
       </div>
       <div className="container-fluid padding-2">
         <div className="d-flex">
@@ -110,7 +114,7 @@ const Contact = () => {
 
           <div>
             <br></br>
-            <h3 className="mt-5">
+            <h3 className="mt-4 h3">
               Seek expert advice from our experienced professionals. <br></br>
               Call +971 522 407 111
             </h3>

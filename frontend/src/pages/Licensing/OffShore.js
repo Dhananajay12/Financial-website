@@ -1,5 +1,5 @@
-import React from "react";
-import img from "../Images/b1.png";
+import React, { useEffect } from "react";
+import img from "../../Images/b4.png";
 import {
   Accordion,
   AccordionItem,
@@ -9,10 +9,16 @@ import {
   AccordionPanel,
 } from "@chakra-ui/react";
 
-// import { AccordionIcon } from "@chakra-ui/icons";
-const How = () => {
+import img1 from "../../Images/b4.png";
+import Contact from "../../components/Contact";
+import SmallStrip from "../../components/SmallStrip";
+const OffShore = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
+      <SmallStrip data={"FreeZone"} data2={"Licensing"} /> <br></br>
       <br></br>
       <div className="container-fluid padding3">
         <div className="row">
@@ -21,53 +27,70 @@ const How = () => {
           </div>
           <div className="col-md-6 col-lg-8 col-xl-8">
             <br></br>
-            <br></br>
+
             <p className="h1 bold-text color">
-              Where to Start Business in Dubai?
+              Offshore Company Formation in Dubai,UAE
             </p>
             <br></br>
             <br></br>
 
             <p>
-              You have a plethora of business investment opportunities in Dubai.
-              One of the major prerequisites that every investor or entrepreneur
-              should perform before investing is RESEARCH. The investor may opt
-              for a Mainland company option or select from a list of Free zone
-              regions. And this selection must be done based on the type of
-              business. When it comes to a mainland company, the Department of
-              Economic Development (DED) is the license issuing authority.
-              Mainland companies are free to operate anywhere in the UAE both in
-              the local market and outside the UAE. There are no operational
-              restrictions of any kind. Free zone regions are specially allotted
-              or designated geographical regions identified by particular
-              business activity. The business is limited to the type or
-              activities specified by the concerned free zone authority. And the
-              free zone authority of each Free zone serves as the license
-              issuing authority. Free zone companies are allowed to conduct
-              business operations inside the Free zone and outside UAE.
-              Diversifying the business to other UAE markets is not possible in
-              the case of Free zone companies. Offshore jurisdictions are
-              specifically meant for Offshore companies that do not require a
-              physical presence in the Emirates. Offshore companies are allowed
-              to do business outside the UAE but not inside. Therefore, the
-              investor should have a clear idea about what, where to start. Here
-              Set up Services shall guide you through the task of what Dubai has
-              to offer and where to form a company in Dubai.
+              Offshore Company Formation in Dubai,UAE An offshore company in
+              Dubai is a business establishment that conducts its operation
+              outside of the location of its origin or original location of
+              registration. With the rise of offshore company formation in
+              Dubai, UAE in 2003, the UAE has become a perfect hub for
+              businesses across the world. Entrepreneurs and investors may have
+              multiple intentions behind forming an Offshore company. Offshore
+              company formation in the UAE helps one to have 100% ownership in
+              their assets in UAE and run their business in a profitable way.
+              Some of the reasons to opt for an offshore company formation in
+              the UAE:<br></br>
+              {">>"} To enjoy monetary benefits like tax exemptions To garner
+              <br></br>
+              {">>"} international funding <br></br>
+              {">>"} To enjoy the benefits of investor-friendly laws and
+              regulations
             </p>
             <br></br>
             <br></br>
-            <button className="button-effect-white fill2">CONTACT US</button>
           </div>
         </div>
+        <div className="row">
+          {">>"} Future plans for business expansion.<br></br>
+          {">>"}To facilitate international trade Both the individuals and
+          corporates can enjoy the ownership rights of an Offshore company. The
+          company’s operations or business transactions in its country of
+          registration is limited. Apart from mainland company formation and
+          free zone company formation, the license issuance process is not
+          applicable for Offshore company formation in UAE. Instead, the
+          authorities issue a certificate of Incorporation. For the same
+          reasons, you may accomplish the offshore business set up services in
+          the UAE without any delays. Offshore companies are governed by
+          international laws. Kiltons consultants have adequate experience and
+          expertise in guiding you through the Incorporation formalities. The
+          company incorporation should satisfy the purpose of your business. Our
+          experience in the business domain, contacts with the UAE authorities
+          help us figure out your business purpose. With assistance from Kiltons
+          consultants, the Offshore Company Incorporation can be accomplished
+          within a day or two. Get in touch with our advisors now for
+          outstanding offshore business set up services in UAE! The investors
+          have two different jurisdictions for setting up an Offshore endeavour
+          in the UAE. And they are: <br></br>
+          {">>"}Jebel Ali Free Zone (JAFZA)
+          <br></br>
+          {">>"}Ras Al Khaimah (RAK)
+          <br></br>
+          <br></br>
+          <br></br>
+        </div>
+        <button className="button-effect-white fill2">CONTACT US</button>
       </div>
       <br></br>
       <br></br>
       <br></br>
-
+      <br></br>
       <div className="container-fluid padding3 ">
-        <p className="h1 bold-text color">
-          Here are the necessary formalities to set up a business in Dubai.{" "}
-        </p>
         <br></br>
         <div className="shadow">
           <Accordion defaultIndex={[0]} allowMultiple>
@@ -199,8 +222,66 @@ const How = () => {
           </Accordion>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div className="container-fluid padding3">
+        <div className="row">
+          <center>
+            <p className="h1 bold-text color">
+              Offshore Company License In UAE
+            </p>
+            <p>
+              An offshore company is preferred by those entrepreneurs and
+              investors who need business confidentiality and asset protection.
+              Offshore companies are also called Non-Resident companies and are
+              not allowed to perform business transactions in the UAE. There are
+              two jurisdictions that offer Offshore Company formation in the
+              UAE. And they are JAFZA (Jebel Ali Free Zone Authority) and RAK
+              (Rasal Al-Khaimah). Offshore companies require an Incorporation
+              certificate to initiate the operations.
+            </p>
+          </center>
+          <br></br>
+
+          <br></br>
+          <br></br>
+
+          <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
+            <img src={img1} className="img-fluid" alt="error" />
+          </div>
+          <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
+            <img src={img1} className="img-fluid" alt="error" />
+          </div>
+          <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
+            <img src={img1} className="img-fluid" alt="error" />
+          </div>
+          <br></br>
+          <p className="mt-3">
+            Company formation in Dubai or UAE is not at all a tedious task
+            provided you have a dedicated consultant to assist you in all
+            matters related to back-end operations. As an investor, you can
+            leverage on Dubai’s strategic location and diversified economy.
+            Kiltons Business Setup Services provides the A to Z offshore
+            business set up services in Dubai, UAE. We undertake the process of
+            finding the right sponsor, Bank Account opening, liquidation
+            procedures, registration etc in the most professional manner. Feel
+            free to contact us for all your business set up in Dubai
+            requirements.
+          </p>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Contact />
+      <hr></hr>
     </>
   );
 };
 
-export default How;
+export default OffShore;

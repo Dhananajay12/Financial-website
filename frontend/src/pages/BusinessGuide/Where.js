@@ -1,11 +1,18 @@
-import React from "react";
-import Contact from "../components/Contact";
-import Needs from "../homecomponents/Needs";
-import img from "../Images/b1.png";
-import img1 from "../Images/b4.png";
+import React, { useEffect } from "react";
+import Contact from "../../components/Contact";
+import Needs from "../../homecomponents/Needs";
+import img from "../../Images/b1.png";
+import img1 from "../../Images/b4.png";
+
+import SmallStrip from "../../components/SmallStrip";
 const Where = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
+      <SmallStrip data={"Where"} data2={"Business-Guide"} />
       <br></br>
       <br></br>
 
@@ -16,13 +23,11 @@ const Where = () => {
           </div>
           <div className="col-lg-8 col-md-6">
             <br></br>
-            <br></br>
             <p className="h1 bold-text color">
               Where to Start Business in Dubai?
             </p>
             <br></br>
             <br></br>
-
             <p>
               You have a plethora of business investment opportunities in Dubai.
               One of the major prerequisites that every investor or entrepreneur

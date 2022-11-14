@@ -45,7 +45,7 @@ const Navbar = () => {
         <ul className="menu">
           <li>
             <div className="dropdown">
-              <Link to="/" className="dropbtn d-flex">
+              <Link to="/" className="dropbtn d-flex drop-link">
                 Business-Guide <MdArrowDropDown className="mt-1" />
               </Link>
               <div className="dropdown-content">
@@ -56,7 +56,7 @@ const Navbar = () => {
                   <Link to="/how">How</Link>{" "}
                 </li>
                 <li>
-                  <Link to="/">May</Link>{" "}
+                  <Link to="/why">Why</Link>{" "}
                 </li>
               </div>
             </div>
@@ -64,62 +64,66 @@ const Navbar = () => {
 
           <li>
             <div className="dropdown">
-              <Link to="/" className="dropbtn d-flex">
+              <Link to="/" className="dropbtn d-flex drop-link">
                 Licensing <MdArrowDropDown className="mt-1" />
               </Link>
               <div className="dropdown-content">
                 <li className="dropdown2">
-                  <Link to="/" className="d-flex">
+                  <Link to="/mainland" className="d-flex">
                     Mainland License{" "}
                     <RiArrowDropRightFill fontSize="20px" className="mt-1 " />{" "}
                   </Link>
                   <ul className="dropdown-content2">
                     <li>
-                      <Link to="/">Professional</Link>{" "}
+                      <Link to="/professional">Professional</Link>{" "}
                     </li>
                     <li>
-                      <Link to="/">Commercial License</Link>{" "}
+                      <Link to="/commericial">Commercial License</Link>{" "}
                     </li>
                     <li>
-                      <Link to="/">Industrial License</Link>{" "}
+                      <Link to="/industrial">Industrial License</Link>{" "}
                     </li>
                     <li>
-                      <Link to="/">Tourism License</Link>{" "}
+                      <Link to="/tourism">Tourism License</Link>{" "}
                     </li>
                     <li>
-                      <Link to="/">E Trader Lincense</Link>{" "}
+                      <Link to="/etrade">E Trader Lincense</Link>{" "}
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/">Free zone License</Link>{" "}
+                  <Link to="/freezone">Free zone License</Link>{" "}
                 </li>
                 <li>
-                  <Link to="/">Offshore License</Link>{" "}
+                  <Link to="/offshore">Offshore License</Link>{" "}
                 </li>
               </div>
             </div>
           </li>
           <li>
             <div className="dropdown">
-              <Link to="/" className="dropbtn d-flex">
+              <Link to="/" className="dropbtn d-flex drop-link">
                 Visa <MdArrowDropDown className="mt-1" />
               </Link>
               <div className="dropdown-content">
                 <li>
-                  <Link to="/">Dubai-Business visa</Link>{" "}
+                  <Link to="/businessvisa">Dubai-Business visa</Link>{" "}
                 </li>
                 <li>
-                  <Link to="/">Dubai-Investi visa</Link>{" "}
+                  <Link to="/investorvisa">Dubai-Investi visa</Link>{" "}
                 </li>
               </div>
             </div>
           </li>
           <li>
-            <Link to="/">About US </Link>{" "}
+            <Link to="/about" className="drop-link">
+              About US{" "}
+            </Link>{" "}
           </li>
           <li>
-            <Link to="/">Blog </Link>{" "}
+            <Link to="/blog" className="drop-link">
+              Blog{" "}
+            </Link>{" "}
           </li>
         </ul>
 
@@ -129,12 +133,9 @@ const Navbar = () => {
         />
       </nav>
       <div className="hamburger-menu mt-1">
-        <button
-          className="icons"
-          onClick={() => setShowMediaIcons(!showMediaIcons)}
-        >
-          <GiHamburgerMenu className="icons" />
-        </button>
+        <Link onClick={() => setShowMediaIcons(!showMediaIcons)}>
+          <GiHamburgerMenu className="icons " />
+        </Link>
       </div>
     </section>
   );

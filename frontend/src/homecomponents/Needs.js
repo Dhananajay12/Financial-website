@@ -16,7 +16,7 @@ const Needs = () => {
     <>
       <div className="center">
         <p className="color2 h1 bold-text">Business Set Up Services</p>
-        <p className="padding-1 mt-4">
+        <p className="padding-4 mt-4">
           Are you looking to set up a business in Dubai? Starting a business in
           Dubai is easy with help from the right professionals. Kiltons offers
           the best and economical business setup services

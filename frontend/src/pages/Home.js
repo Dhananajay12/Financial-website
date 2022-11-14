@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Contact from "../components/Contact";
 import Caursol from "../homecomponents/Caursol";
 import Needs from "../homecomponents/Needs";
 import Services from "../homecomponents/Services";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Caursol />
@@ -14,7 +18,7 @@ const Home = () => {
       <hr></hr>
       <br></br>
       <div className="container">
-        <div className="row">
+        <div className="row mt-2">
           <p className="bold-text text-secondary">
             Kiltons Business Setup and Support Services
           </p>
@@ -36,7 +40,7 @@ const Home = () => {
             business setup in Dubai.
           </p>
         </div>
-        <div className="row">
+        <div className="row  mt-2">
           <p className="bold-text text-secondary">Company Formation in Dubai</p>
           <p className="text-secondary">
             Dubai has been the most sought after destination for business
@@ -53,7 +57,7 @@ const Home = () => {
             Offshore Company in Dubai.
           </p>
         </div>
-        <div className="row">
+        <div className="row  mt-2">
           <p className="bold-text text-secondary">Licensing Services</p>
           <p className="text-secondary">
             Every business firm must possess a business license for operating in
@@ -73,7 +77,7 @@ const Home = () => {
             time-bound manner for your business setup in Dubai.
           </p>
         </div>
-        <div className="row">
+        <div className="row  mt-2">
           <p className="bold-text text-secondary">Visa Services</p>
           <p className="text-secondary">
             UAE offers different types of visa based on your purpose of visit,
@@ -90,7 +94,41 @@ const Home = () => {
             in the shortest possible time.
           </p>
         </div>
+        <div className="row  mt-2">
+          <p className="bold-text text-secondary">Sponsorship Services</p>
+          <p className="text-secondary">
+            Finding a local Emirati as your sponsor, for business setup in
+            Dubai, is a daunting process. The local sponsor must be reliable and
+            dependable. All the legal formalities and ownership agreements will
+            be on the sponsor’s name. The risk factors involved can make you
+            anxious. Forget the worries, once we are with you. We understand
+            your worries. Kiltons will provide you with the most credible
+            sponsor for your business formation in Dubai. With our assurance,
+            you can forget all the apprehensions about the sponsor. And wholly
+            focus on the development of your business. Consult our professional
+            representative today to know more about our sponsorship services.
+          </p>
+        </div>
+        <div className="row mt-2">
+          <p className="bold-text text-secondary">Finance Services</p>
+          <p className="text-secondary">
+            You have come with high hopes for business formation in Dubai. To be
+            successful and reach the top of the world. Money should not be a
+            hindrance to achieve your goal. Our major financial services include
+            accounting and bookkeeping, VAT registration and VAT return filing,
+            Audit services, CFO services, Tax services, and more. We have our
+            exclusive finance services for those who want financial support to
+            set up a business in the UAE. Our easy to obtain and hassle-free
+            service has been serving the clients since long. There are no
+            complications or unnecessary fees involved in the process of
+            financial services. The deal with us would be fast and transparent.
+            Thereby, you can enter the world of business without any delay and
+            start your dream journey towars business setup in Dubai.
+          </p>
+        </div>
       </div>
+      <br></br>
+      <hr></hr>
     </>
   );
 };

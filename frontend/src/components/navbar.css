@@ -1,4 +1,17 @@
 /* -----------Navbar style start-------- */
+:root {
+    --main-color: rgb(114 36 147);
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: .1rem solid var(--black);
+    --box-shadow: 1px 5px 10px 5px #ccc;
+    --box-shadow2: 10px 10px 10px 10px #ccc;
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
 
 .header {
     position: sticky;
@@ -67,11 +80,12 @@
 
 
 
-@media(max-width:950px) {
+@media(max-width:1100px) {
     .header {
         position: relative;
         height: 6rem;
-
+        justify-content: space-between !important;
+        padding: 0% !important;
     }
 
     .menu li {
@@ -80,8 +94,11 @@
         width: 100%;
     }
 
-    .logo {
-        margin-top: -1rem;
+    .header .logo {
+        font-size: 2rem;
+        margin-top: -1.7rem;
+        margin-left: -2rem;
+
     }
 
     .dropdown-content {
@@ -117,17 +134,17 @@
     }
 
     .navbar.active {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         left: 0;
-
-
+        border-radius: 10px;
+        height: 20rem;
         transition: all 0.5s ease;
         z-index: 1;
-        background-color: rgb(68, 62, 6);
+        background-color: var(--main-color);
 
     }
 
-
+    /* 
     .link {
         text-align: center;
         margin: 1.5rem;
@@ -137,7 +154,7 @@
 
     .link :hover {
         border-radius: 0;
-    }
+    } */
 
     .logo {
         position: absolute;
@@ -149,18 +166,41 @@
 
     .hamburger-menu {
         display: block !important;
-        position: absolute;
-        top: 0;
-        right: 0;
+        /* position: absolute; */
+        margin-top: -4.5rem !important;
+
+
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-
+        color: #121212;
+        z-index: 2;
+        margin-right: -3rem;
     }
 
+    .drop-link:hover {
+        color: plum !important;
+        font-weight: bold;
+    }
+
+    .menu a {
+
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    .drop-link {
+        font-size: 17px;
+        color: white !important;
+    }
+
+
     .icons {
-        border: 1px solid white;
-        margin-top: 0.5rem;
+
+
+
+        color: var(--main-color) !important;
+        z-index: 999;
 
     }
 }
@@ -211,7 +251,7 @@ menu>a {
     text-decoration: none;
     color: #121212;
     display: block;
-    padding: 10px 1.5rem;
+    padding: 10px 1.3rem;
 }
 
 .menu a:hover {
@@ -234,6 +274,7 @@ ul {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 210px;
+    border-radius: 5px;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -245,6 +286,7 @@ ul {
     left: 100.5%;
     width: 100%;
     padding: 0;
+    border-radius: 5px;
     display: none;
     top: 0;
     position: absolute;
@@ -260,13 +302,13 @@ ul {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transition: .7s linear;
+
     /* Animation */
 }
 
 .dropdown2:hover .dropdown-content2 {
     display: block;
-    transition: .7s linear;
+    transition: .10s linear;
     /* Animation */
 }
 
