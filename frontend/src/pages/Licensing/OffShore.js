@@ -12,6 +12,7 @@ import {
 import img1 from "../../Images/b4.png";
 import Contact from "../../components/Contact";
 import SmallStrip from "../../components/SmallStrip";
+import ModalContact2 from "../../components/ModalContact2";
 const OffShore = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -84,7 +85,7 @@ const OffShore = () => {
           <br></br>
           <br></br>
         </div>
-        <button className="button-effect-white fill2">CONTACT US</button>
+        <ModalContact2 />
       </div>
       <br></br>
       <br></br>

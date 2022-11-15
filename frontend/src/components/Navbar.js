@@ -75,7 +75,7 @@ const Navbar = () => {
                   </Link>
                   <ul className="dropdown-content2">
                     <li>
-                      <Link to="/professional">Professional</Link>{" "}
+                      <Link to="/professional">Professional License</Link>{" "}
                     </li>
                     <li>
                       <Link to="/commericial">Commercial License</Link>{" "}

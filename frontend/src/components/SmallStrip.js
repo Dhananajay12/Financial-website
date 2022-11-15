@@ -14,26 +14,26 @@ const SmallStrip = (prop) => {
           </div>
           <div className="d-flex text-white mt-1 ">
             <div
-              className="mx-3 zoom "
+              className=" zoom "
               style={{
                 background: "white",
                 color: "purple",
-                padding: "0.5rem",
+                padding: "1rem",
               }}
             >
               <BsBuilding fontSize="60px" className="mt-2" />
-              <p className="mt-">
+              <p className="mt-1">
                 MAINLAND <br></br>LICENSE
               </p>
             </div>
-            <div className=" zoom" style={{ padding: "1rem" }}>
+            <div className=" mx-1 zoom" style={{ padding: "1rem" }}>
               <BiBuilding fontSize="60px" />
               <p className="mt-1">
                 MAINLAND <br></br>LICENSE
               </p>
             </div>
             <div
-              className="mx-3 zoom"
+              className=" zoom"
               style={{ background: "white", color: "purple", padding: "1rem" }}
             >
               <BiBuildings fontSize="60px" />

@@ -99,7 +99,7 @@ const Contact = () => {
           </p>
           <br></br>
           <button
-            className="button-effect-white  fill2 mx-2 mt-3"
+            className="button-effect-white3  fill4 mx-2 mt-3"
             style={{ width: "15rem" }}
           >
             CONTACT NOW

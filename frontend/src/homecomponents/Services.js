@@ -20,7 +20,7 @@ import "./services.css";
 import { FaShieldAlt, FaUsers, FaUserShield } from "react-icons/fa";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import "../style.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -238,7 +238,6 @@ const Services = () => {
               Get in Touch
             </Link> */}
             <ModalContact2 />
-            <br></br>
           </div>
         </div>
       </div>
@@ -272,11 +271,38 @@ const Services = () => {
                     />
                     FREEZONE LICENSE
                     <br />
-                    {/* <span>Graphic Designer</span> */}
                   </h2>
                 </div>
               </div>
             </center>
+            {/* <div className="card11__collection clear-fix">
+              <div className="cards11 cards11--three">
+                <img
+                  src="https://images.unsplash.com/photo-1480408144303-d874c5e12201?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575213599ae24b3dbdfd84be79425c50&auto=format&fit=crop&w=634&q=80"
+                  className="img-responsive"
+                  alt="Cards"
+                />
+                <span className="cards11--three__rect-1">
+                  <span className="shadow-1"></span>
+                  <p>Chris Levnon</p>
+                </span>
+                <span className="cards11--three__rect-2">
+                  <span className="shadow-2"></span>
+                </span>
+                <span className="cards11--three__circle"></span>
+                <ul className="cards11--three__list">
+                  <li>
+                    <i className="fab fa-facebook-f"></i>
+                  </li>
+                  <li>
+                    <i className="fab fa-twitter"></i>
+                  </li>
+                  <li>
+                    <i className="fab fa-linkedin-in"></i>
+                  </li>
+                </ul>
+              </div>
+            </div> */}
           </div>
           <div className="col-lg-6 col-xl-4 col-md-6  mt-5 center">
             <center>

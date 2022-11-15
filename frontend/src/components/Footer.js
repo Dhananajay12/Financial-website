@@ -49,7 +49,7 @@ const Footer = () => {
                 <div className="center2 mx-4">
                   <ul>
                     <br />
-                    <h3 className="text-white h3 ">Quick a</h3>
+                    <h3 className="text-white h3 ">Quick Links</h3>
                     <hr className="color-hr"></hr>
                     <li className="zoom marginFooter  mt-3">
                       <Link to="/contact" className="text-white color mt-1 ">
@@ -58,7 +58,7 @@ const Footer = () => {
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
-                        Contact Us
+                        Mainland License{" "}
                       </Link>
                     </li>
                     <li className="zoom marginFooter  mt-3">
@@ -69,35 +69,46 @@ const Footer = () => {
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
-                        About Us
+                        Free zone License
                       </Link>
                     </li>
                     <li className="zoom marginFooter  mt-3">
                       <Link to="/product" className="text-white  color  ">
                         <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                        Product
+                        Offshore License
                       </Link>
                     </li>
                     <li className="zoom marginFooter">
                       {" "}
-                      <Link to="/" className="text-white color  ">
+                      <Link to="/businessvisa" className="text-white color  ">
                         {" "}
                         <i
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
-                        About Us
+                        Dubai-Business visa
                       </Link>
                     </li>
                     <li className="zoom marginFooter  mt-3">
                       {" "}
-                      <Link to="/" className="text-white color  ">
+                      <Link to="/investorvisa" className="text-white color  ">
                         {" "}
                         <i
                           className="fa fa-angle-right"
                           aria-hidden="true"
                         ></i>{" "}
-                        About Us
+                        Dubai-Investi visa
+                      </Link>
+                    </li>
+                    <li className="zoom marginFooter  mt-3">
+                      {" "}
+                      <Link to="/blog" className="text-white color  ">
+                        {" "}
+                        <i
+                          className="fa fa-angle-right"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Blog
                       </Link>
                     </li>
                   </ul>
@@ -106,56 +117,53 @@ const Footer = () => {
               <div className="col-sm-12 col-md-6 col-lg-3 mt-1 mb-5">
                 <ul className="mx-2">
                   <br />
-                  <h3 className="text-white h3 ">Blog</h3>
+                  <h3 className="text-white h3 ">License</h3>
                   <hr className="color-hr"></hr>
                   <li className="zoom marginFooter mt-3">
-                    <Link to="/" className="text-white color mt-1 ">
+                    <Link to="/professional" className="text-white color mt-1 ">
                       {" "}
                       <i
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
-                      Contact Us
+                      Professional License
                     </Link>
                   </li>
 
                   <li className="zoom marginFooter  mt-3">
                     {" "}
-                    <Link to="/" className="text-white  color ">
+                    <Link to="/commericial" className="text-white  color ">
                       {" "}
                       <i
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
-                      About Us
+                      Commercial License
                     </Link>
                   </li>
                   <li className="zoom marginFooter  mt-3">
-                    <a to="/" className="text-white  color ">
+                    <Link to="/industrial" className="text-white  color ">
                       <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                      About Us
-                    </a>
+                      Industrial License
+                    </Link>
                   </li>
                   <li className="zoom marginFooter">
                     {" "}
-                    <Link to="/" className="text-white color  ">
+                    <Link to="/tourism" className="text-white color  ">
                       {" "}
                       <i
                         className="fa fa-angle-right"
                         aria-hidden="true"
                       ></i>{" "}
-                      About Us
+                      Tourism License
                     </Link>
                   </li>
                   <li className="zoom marginFooter  mt-3">
                     {" "}
-                    <Link to="/" className="text-white color  ">
+                    <Link to="/etrade" className="text-white color  ">
                       {" "}
-                      <i
-                        className="fa fa-angle-right"
-                        aria-hidden="true"
-                      ></i>{" "}
-                      About Us
+                      <i className="fa fa-angle-right" aria-hidden="true"></i> E
+                      Trader Lincense
                     </Link>
                   </li>
                 </ul>

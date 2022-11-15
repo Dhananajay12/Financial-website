@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Contact from "../../components/Contact";
+import ModalContact2 from "../../components/ModalContact2";
 import SmallStrip from "../../components/SmallStrip";
 import img1 from "../../Images/b4.png";
 const Why = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <SmallStrip data={"Why"} data2={"Business-Guide"} />
@@ -33,7 +38,7 @@ const Why = () => {
               reasons why you should start a Business in Dubai. Here they are:
             </p>
             <br></br>
-            <button className="button-effect-white fill2">CONTACT US</button>
+            <ModalContact2 />
           </div>
         </div>
       </div>

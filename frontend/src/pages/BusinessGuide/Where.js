@@ -5,6 +5,10 @@ import img from "../../Images/b1.png";
 import img1 from "../../Images/b4.png";
 
 import SmallStrip from "../../components/SmallStrip";
+import ModalContact2 from "../../components/ModalContact2";
+
+import "../../style.css";
+
 const Where = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,7 +60,7 @@ const Where = () => {
             </p>
             <br></br>
             <br></br>
-            <button className="button-effect-white fill2">CONTACT US</button>
+            <ModalContact2 />
           </div>
         </div>
       </div>
@@ -82,11 +86,62 @@ const Where = () => {
           </p>
 
           <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
-            <img src={img1} className="img-fluid" alt="error" />
+            <div className="card-main">
+              <div className="image">
+                <img src={img1} />
+              </div>
+              <div className="details">
+                <div className="center">
+                  <br />
+                  <h1>
+                    Someone famous
+                    <br />
+                    <br />
+                    <span>team leader</span>
+                  </h1>
+                  <br />
+
+                  <p>
+                    The key business and tourist destinations like Dubai World
+                    Trade Centre, Emirates Tower, Financial Centre, etc are
+                    located along the most happening Sheikh Zayed Road. The
+                    world-famous Burj Khalifa stays very close to Sheikh Zayed
+                    Road. Sheikh Zayed Road offers scenic beauty too.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
-            <img src={img1} className="img-fluid" alt="error" />
-          </div>
+          {/* <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
+            <div className="card__collection clear-fix">
+              <div className="cards11 cards11--three">
+                <img
+                  src="https://images.unsplash.com/photo-1480408144303-d874c5e12201?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575213599ae24b3dbdfd84be79425c50&auto=format&fit=crop&w=634&q=80"
+                  className="img-responsive"
+                  alt="Cards"
+                />
+                <span className="cards11--three__rect-1">
+                  <span className="shadow-1"></span>
+                  <p>Chris Levnon</p>
+                </span>
+                <span className="cards11--three__rect-2">
+                  <span className="shadow-2"></span>
+                </span>
+                <span className="cards11--three__circle"></span>
+                <ul className="cards11--three__list">
+                  <li>
+                    <i className="fab fa-facebook-f"></i>
+                  </li>
+                  <li>
+                    <i className="fab fa-twitter"></i>
+                  </li>
+                  <li>
+                    <i className="fab fa-linkedin-in"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> */}
           <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
             <img src={img1} className="img-fluid" alt="error" />
           </div>

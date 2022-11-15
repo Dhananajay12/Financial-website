@@ -12,6 +12,7 @@ import {
 import img1 from "../../../Images/b4.png";
 import Contact from "../../../components/Contact";
 import SmallStrip from "../../../components/SmallStrip";
+import ModalContact2 from "../../../components/ModalContact2";
 
 const Professional = () => {
   useEffect(() => {
@@ -73,7 +74,7 @@ const Professional = () => {
             </p>
             <br></br>
             <br></br>
-            <button className="button-effect-white fill2">CONTACT US</button>
+            <ModalContact2 />
           </div>
         </div>
       </div>
