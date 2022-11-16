@@ -24,7 +24,7 @@ const How = () => {
       <div className="container-fluid padding3">
         <div className="row">
           <div className="col-md-6 col-lg-4 col-xl-4">
-            <img src={img} alt="error" className="img-fluid rounded" />
+            <img src={img} alt="error" className="img-fluid rounded mt-3" />
           </div>
           <div className="col-md-6 col-lg-8 col-xl-8">
             <br></br>

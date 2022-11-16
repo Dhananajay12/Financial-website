@@ -18,11 +18,13 @@ import BusinessVisa from "./pages/Visa/BusinessVisa";
 import InvestorVisa from "./pages/Visa/InvestorVisa";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import SocialBAr from "./components/SocialBAr";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <SocialBAr />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/where" element={<Where />} />

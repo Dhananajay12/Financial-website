@@ -52,7 +52,7 @@ const Footer = () => {
                     <h3 className="text-white h3 ">Quick Links</h3>
                     <hr className="color-hr"></hr>
                     <li className="zoom marginFooter  mt-3">
-                      <Link to="/contact" className="text-white color mt-1 ">
+                      <Link to="/mainland" className="text-white color mt-1 ">
                         {" "}
                         <i
                           className="fa fa-angle-right"
@@ -63,7 +63,7 @@ const Footer = () => {
                     </li>
                     <li className="zoom marginFooter  mt-3">
                       {" "}
-                      <Link to="/about" className="text-white  color   mt-3">
+                      <Link to="/freezone" className="text-white  color   mt-3">
                         {" "}
                         <i
                           className="fa fa-angle-right"
@@ -73,7 +73,7 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li className="zoom marginFooter  mt-3">
-                      <Link to="/product" className="text-white  color  ">
+                      <Link to="/offshore" className="text-white  color  ">
                         <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
                         Offshore License
                       </Link>
