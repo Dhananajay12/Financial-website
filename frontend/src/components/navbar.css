@@ -73,9 +73,6 @@
 }
 
 
-/* li:hover {
-    color: rgb(231, 154, 53) !important;
-} */
 
 .navbar {
 
@@ -148,17 +145,7 @@
 
     }
 
-    /* 
-    .link {
-        text-align: center;
-        margin: 1.5rem;
-        width: 90%;
-        display: table;
-    }
 
-    .link :hover {
-        border-radius: 0;
-    } */
 
     .logo {
         position: absolute;

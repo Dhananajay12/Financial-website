@@ -4,13 +4,13 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalFooter,
   ModalBody,
   ModalCloseButton,
   Button,
   useDisclosure,
 } from "@chakra-ui/react";
+import boy from "../Images/popup-boy.jpg";
 const ModalContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -30,30 +30,11 @@ const ModalContact = () => {
       <Modal onClose={onClose} isOpen={isOpen} size="6xl" isCentered>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader fontSize="30px" color="purple">
-            Cost Calculate
-          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <p className="h5">
-              {" "}
-              Choose your business category This question is required.{" "}
-            </p>
-            <p>
-              * Your business category will help determine which jurisdiction,
-              trade licence and business activity will apply to your company.
-            </p>
             <div className="row">
               <div className="col-md-6 col-lg-6">
-                <div className="input-fluid mt-2">
-                  <p className="paragraph-small">FullName:</p>
-                  <input
-                    type="text"
-                    name="user_name"
-                    id=""
-                    className="form-control"
-                  />
-                </div>
+                <img src={boy} className="error" alt="error" />
               </div>
               <div className="col-md-6 col-lg-6">
                 <div className="input-fluid mt-2">
@@ -65,14 +46,8 @@ const ModalContact = () => {
                     className="form-control"
                   />
                 </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-md-6 col-lg-6">
                 <div className="input-fluid mt-2">
-                  <p className="paragraph-small">Phone:</p>
-
+                  <p className="paragraph-small">LastName:</p>
                   <input
                     type="text"
                     name="user_name"
@@ -80,11 +55,8 @@ const ModalContact = () => {
                     className="form-control"
                   />
                 </div>
-              </div>
-              <div className="col-md-6 col-lg-6">
                 <div className="input-fluid mt-2">
-                  <p className="paragraph-small">Email:</p>
-
+                  <p className="paragraph-small">LastName:</p>
                   <input
                     type="text"
                     name="user_name"
@@ -92,27 +64,38 @@ const ModalContact = () => {
                     className="form-control"
                   />
                 </div>
-              </div>
-            </div>
 
-            <div className="row">
-              <div className="input-fluid mt-2">
-                <p className="paragraph-small">Message:</p>
-                <input
-                  type="text"
-                  name="user_name"
-                  id=""
-                  className="form-control"
-                />
+                <div className="input-fluid mt-2">
+                  <p className="paragraph-small">LastName:</p>
+                  <input
+                    type="text"
+                    name="user_name"
+                    id=""
+                    className="form-control"
+                  />
+                </div>
+                <div className="input-fluid mt-2">
+                  <p className="paragraph-small">LastName:</p>
+                  <input
+                    type="text"
+                    name="user_name"
+                    id=""
+                    className="form-control"
+                  />
+                </div>
+
+                <ModalFooter className="mt-5">
+                  <Button
+                    onClick={onClose}
+                    className="button-effect-white  fill2"
+                  >
+                    Close
+                  </Button>
+                </ModalFooter>
               </div>
             </div>
           </ModalBody>
           <br></br>
-          <ModalFooter>
-            <Button onClick={onClose} className="button-effect-white  fill2">
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </div>

@@ -6,16 +6,9 @@ import { BiBuilding, BiBuildings } from "react-icons/bi";
 import { TbCertificate } from "react-icons/tb";
 import { FcProcess } from "react-icons/fc";
 import { Link } from "react-router-dom";
-import b1 from "../Images/b1.jpeg";
-import b2 from "../Images/b2.jpeg";
-import b3 from "../Images/b3.jpeg";
 import b4 from "../Images/b4.jpeg";
-import img5 from "../Images/5.png";
-import img6 from "../Images/6.jpg";
-import img7 from "../Images/7.jpeg";
 import avatar from "../Images/avatar.jpg";
 import office from "../Images/office.jpeg";
-
 import "./services.css";
 import { FaShieldAlt, FaUsers, FaUserShield } from "react-icons/fa";
 import { GiTakeMyMoney } from "react-icons/gi";
@@ -25,9 +18,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Pagination, Navigation } from "swiper";
-import ChakkraModal from "./ChakkraModal";
 import ModalContact2 from "../components/ModalContact2";
-import sun from "../Images/sun-1.png";
+
 const Services = () => {
   useEffect(() => {
     AOS.init();
@@ -69,39 +61,8 @@ const Services = () => {
                 <br></br>
                 <ModalContact2 />
                 <br></br>
-                {/* <Link to="/" className="button-effect-white mt-3  fill2">
-                  Get in Touch
-                </Link> */}
               </div>
             </div>
-            {/* <div className="container1">
-              <div className="card-5">
-                <div className="slide slide1">
-                  <div className="content-2">
-                    <div className="icon">
-                      <img
-                        src={img5}
-                        className="img-fluid rounded"
-                        alt="error"
-                      ></img>
-                     
-
-                      <p className="text-white fa" style={{ fontSize: "30px" }}>
-                        Licensing{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="slide slide2">
-                  <div className="content-2">
-                    <h3>Hello there!</h3>
-
-                    <p>Trust yourself and keep going.</p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
           <div className="col-lg-4 mt-5">
             <div className="card-small-2 zoom">
@@ -122,9 +83,6 @@ const Services = () => {
                 <br></br>
                 <ModalContact2 />
                 <br></br>
-                {/* <Link to="/" className="button-effect-white mt-3  fill2">
-                  Get in Touch
-                </Link> */}
               </div>
             </div>
           </div>
@@ -147,9 +105,6 @@ const Services = () => {
                 <br></br>
                 <ModalContact2 />
                 <br></br>
-                {/* <Link to="/" className="button-effect-white mt-3  fill2">
-                  Get in Touch
-                </Link> */}
               </div>
             </div>
           </div>
@@ -175,9 +130,6 @@ const Services = () => {
                 <br></br>
                 <ModalContact2 />
                 <br></br>
-                {/* <Link to="/" className="button-effect-white mt-3  fill2">
-                  Get in Touch
-                </Link> */}
               </div>
             </div>
           </div>
@@ -200,9 +152,6 @@ const Services = () => {
                 <br></br>
                 <ModalContact2 />
                 <br></br>
-                {/* <Link to="/" className="button-effect-white mt-3  fill2">
-                  Get in Touch
-                </Link> */}
               </div>
             </div>
           </div>
@@ -225,9 +174,6 @@ const Services = () => {
                 </p>
                 <br></br>
 
-                {/* <Link to="/" className="button-effect-white mt-3  fill2">
-                  Get in Touch
-                </Link> */}
                 <ModalContact2 />
                 <br></br>
               </div>
@@ -255,9 +201,6 @@ const Services = () => {
             </p>
             <br></br>
 
-            {/* <Link to="/" className="button-effect-white  fill2">
-              Get in Touch
-            </Link> */}
             <ModalContact2 />
           </div>
         </div>
@@ -296,34 +239,6 @@ const Services = () => {
                 </div>
               </div>
             </center>
-            {/* <div className="card11__collection clear-fix">
-              <div className="cards11 cards11--three">
-                <img
-                  src="https://images.unsplash.com/photo-1480408144303-d874c5e12201?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575213599ae24b3dbdfd84be79425c50&auto=format&fit=crop&w=634&q=80"
-                  className="img-responsive"
-                  alt="Cards"
-                />
-                <span className="cards11--three__rect-1">
-                  <span className="shadow-1"></span>
-                  <p>Chris Levnon</p>
-                </span>
-                <span className="cards11--three__rect-2">
-                  <span className="shadow-2"></span>
-                </span>
-                <span className="cards11--three__circle"></span>
-                <ul className="cards11--three__list">
-                  <li>
-                    <i className="fab fa-facebook-f"></i>
-                  </li>
-                  <li>
-                    <i className="fab fa-twitter"></i>
-                  </li>
-                  <li>
-                    <i className="fab fa-linkedin-in"></i>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
           </div>
           <div className="col-lg-6 col-xl-4 col-md-6  mt-5 center">
             <center>
@@ -350,7 +265,6 @@ const Services = () => {
                     />
                     MAINLAND LICENSE
                     <br />
-                    {/* <span>Graphic Designer</span> */}
                   </h2>
                 </div>
               </div>
@@ -379,7 +293,6 @@ const Services = () => {
                     />{" "}
                     OFFSHORE LICENSE
                     <br />
-                    {/* <span className="">Graphic Designer</span> */}
                   </h2>
                 </div>
               </div>
@@ -424,9 +337,6 @@ const Services = () => {
             <br></br>
 
             <ModalContact2 />
-            {/* <Link to="/" className="button-effect-white  fill2 ">
-              Get in Touch
-            </Link> */}
           </div>
 
           <div
@@ -436,7 +346,7 @@ const Services = () => {
           >
             <br></br>
 
-            <img src={b4} className="img-fluid rounded" />
+            <img src={b4} className="img-fluid rounded" alt="error" />
           </div>
         </div>
         <br></br>
@@ -508,7 +418,6 @@ const Services = () => {
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >
-            {/* <h1 className="h1">?</h1> */}
             <div className="back zoom ">
               <div className="border-class">
                 <h2 className="bold-text h2">Why ?</h2>
@@ -520,10 +429,10 @@ const Services = () => {
                   technology-driven........
                 </h5>
                 <br></br>
-                {/* <ChakkraModal /> */}
-                <h5 className="h5">
+
+                <Link className="h5 link-dec">
                   Know more <span className="display-2 ">{">>>>"} </span>{" "}
-                </h5>
+                </Link>
               </div>
             </div>
           </div>
@@ -544,7 +453,7 @@ const Services = () => {
                 </h5>
                 <br></br>
 
-                <Link className="h5" to="/where">
+                <Link className="h5 link-dec" to="/where">
                   Know more <span className="display-2">{">>>>"} </span>{" "}
                 </Link>
               </div>
@@ -566,11 +475,10 @@ const Services = () => {
                   very professional...........
                 </h5>
                 <br></br>
-                {/* <ChakkraModal /> */}
 
-                <h5 className="h5">
+                <Link className="h5 link-dec">
                   Know more <span className="display-2">{">>>>"} </span>{" "}
-                </h5>
+                </Link>
               </div>
             </div>
           </div>
@@ -626,9 +534,6 @@ const Services = () => {
             <br></br>
             <br></br>
             <ModalContact2 />
-            {/* <Link to="/" className="button-effect-white  fill2">
-              Get in Touch
-            </Link> */}
           </div>
         </div>
       </div>

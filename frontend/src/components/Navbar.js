@@ -9,8 +9,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import { RiArrowDropRightFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
-import { FiPhoneCall } from "react-icons/fi";
 
 import ChakkraModal from "../homecomponents/ChakkraModal";
 const Navbar = () => {
@@ -121,14 +119,7 @@ const Navbar = () => {
             onClick={() => setShowMediaIcons(false)}
           />
         </nav>
-        {/* <Link
-          to="/"
-          className="button-effect-white3 fill4"
-          style={{ marginRight: "2rem" }}
-        >
-          Cost Calculator
-          
-        </Link> */}
+
         <ChakkraModal />
 
         <div className="hamburger-menu mt-1">

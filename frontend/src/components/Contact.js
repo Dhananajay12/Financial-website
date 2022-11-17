@@ -6,19 +6,14 @@ import { uid } from "uid";
 import { set, ref } from "firebase/database";
 import { Form, Alert, InputGroup, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import UserData from "../services/User";
 
 const Contact = () => {
-  // const [name, setName] = useState("");
-  // const [lastname, setLastName] = useState("");
-
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [mess, setMess] = useState("");
   const [message, setMessage] = useState({ error: false, msg: "" });
-  const [error, setError] = useState({ error: false, msg: "" });
 
   const handleSubmit = async (e) => {
     const uuid = uid();
@@ -34,13 +29,6 @@ const Contact = () => {
       setMessage({ error: true, msg: "All fields are mandatory!" });
       return;
     } else {
-      const newUser = {
-        name,
-        lastname,
-        phone,
-        email,
-        mess,
-      };
       set(ref(db, "users/" + uuid), {
         name: name,
         lastname: lastname,
@@ -57,7 +45,6 @@ const Contact = () => {
     setPhone("");
     setEmail("");
     setMess("");
-    // e.preventDefualt();
   };
 
   return (
@@ -84,7 +71,7 @@ const Contact = () => {
                 <InputGroup className=" mt-2">
                   <Form.Control
                     type="text"
-                    placeholder="Book Title"
+                    placeholder=""
                     className="form-control"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -96,10 +83,9 @@ const Contact = () => {
               <Form.Group className="mb-3" controlId="formlast">
                 <p className="paragraph-small">LastName:</p>
                 <InputGroup>
-                  {/* <InputGroup.Text id="formAuthor">A</InputGroup.Text> */}
                   <Form.Control
                     type="text"
-                    placeholder="Book Author"
+                    placeholder=""
                     value={lastname}
                     onChange={(e) => setLastname(e.target.value)}
                   />
@@ -184,110 +170,6 @@ const Contact = () => {
           </div>
         </Form>
 
-        {/* <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-md-6 col-lg-6">
-              <div className="input-fluid mt-2">
-                <p className="paragraph-small">FullName:</p>
-                <input
-                  id="name"
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="form-control"
-                />
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-6">
-              <div className="input-fluid mt-2">
-                <p className="paragraph-small">LastName:</p>
-                <input
-                  id="lastname"
-                  type="text"
-                  value={lastname}
-                  onChange={(e) => setLastName(e.target.value)}
-                  className="form-control"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-md-6 col-lg-6">
-              <div className="input-fluid mt-2">
-                <p className="paragraph-small">Phone:</p>
-
-                <input
-                  id="phone"
-                  type="number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="form-control"
-                />
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-6">
-              <div className="input-fluid mt-2">
-                <p className="paragraph-small">Email:</p>
-
-                <input
-                  id="email"
-                  type="text"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="form-control"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="input-fluid mt-2">
-              <p className="paragraph-small">Message:</p>
-              <input
-                id="message"
-                type="text"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="form-control"
-              />
-            </div>
-            <button
-              className="button-effect-white3  fill4 mx-2 mt-3"
-              style={{ width: "15rem" }}
-              type="submit"
-            >
-              CONTACT NOW
-            </button>
-          </div>
-          <br></br>
-          <div className="row mx-2 text-white">
-            <p>
-              <input type="checkbox" name="" value="" className="mx-2" />
-              By checking this box , I understand and acknowledge that the
-              information shared above is genuine to the best of my knowledge.
-            </p>
-            <p className="mx-2">
-              This site is protected by reCAPTCHA and the Google
-              <Link to="/" className="mx-1 text-primary">
-                Privacy Policy{" "}
-              </Link>
-              and{" "}
-              <Link to="/" className="mx-1 text-primary">
-                Terms{" "}
-              </Link>{" "}
-              of Service apply.
-            </p>
-            <br></br>
-            <button
-              className="button-effect-white3  fill4 mx-2 mt-3"
-              style={{ width: "15rem" }}
-              type="submit"
-            >
-              CONTACT NOW
-            </button>
-          </div>
-        </form> */}
         <br></br>
         <br></br>
       </div>

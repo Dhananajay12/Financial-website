@@ -9,7 +9,6 @@ import {
   AccordionPanel,
 } from "@chakra-ui/react";
 
-import img1 from "../../../Images/b4.png";
 import Contact from "../../../components/Contact";
 import SmallStrip from "../../../components/SmallStrip";
 import ModalContact2 from "../../../components/ModalContact2";

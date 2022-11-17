@@ -4,7 +4,6 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalFooter,
   ModalBody,
   ModalCloseButton,
@@ -23,9 +22,6 @@ const ModalContact2 = () => {
       <Modal onClose={onClose} isOpen={isOpen} size="6xl" isCentered>
         <ModalOverlay />
         <ModalContent>
-          {/* <ModalHeader fontSize="30px" color="purple">
-            Cost Calculate
-          </ModalHeader> */}
           <ModalCloseButton />
           <ModalBody style={{ padding: "0px" }}>
             <div className="row">

@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import "./need.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; //
-import { CgArrowLeft, CgArrowLeftO } from "react-icons/cg";
-import { BsArrowLeftCircle, BsFillArrowLeftCircleFill } from "react-icons/bs";
+
+import { BsArrowLeftCircle } from "react-icons/bs";
 import ModalContact from "../components/ModalContact";
 
 const Needs = () => {
@@ -336,10 +336,6 @@ const Needs = () => {
             data-aos-duration="3000"
           >
             <div className="row">
-              {/* <BsArrowLeftCircle
-                className="icons-small zoom"
-                onClick={() => setshowComponent("start")}
-              /> */}
               <br></br>
               <br></br>
               <center>

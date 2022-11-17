@@ -3,6 +3,7 @@ import Contact from "../components/Contact";
 import Caursol from "../homecomponents/Caursol";
 import Needs from "../homecomponents/Needs";
 import Services from "../homecomponents/Services";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   useEffect(() => {
@@ -11,6 +12,10 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Home Page</title>
+        <meta name="description" content="All license here" />
+      </Helmet>
       <Caursol />
       <Needs />
       <Services />

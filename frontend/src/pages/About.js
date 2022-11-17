@@ -7,6 +7,8 @@ const About = () => {
   }, []);
   return (
     <>
+      <p className="h1">About us Contant here</p>
+
       <Contact />
     </>
   );

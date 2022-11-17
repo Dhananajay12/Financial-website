@@ -52,7 +52,7 @@
 
 .back-img-5 {
     background-image: url("/src/Images/b4.png");
-    /* background: var(--main-color); */
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,15 +63,6 @@
     height: 100%;
 }
 
-
-.back-img-4 {
-    background-image: url("/src/Images/5.png");
-    background-size: cover;
-
-    color: white;
-    padding: 30px 40px;
-    height: 26rem;
-}
 
 .back-img-4:hover {
     filter: brightness(0.7);
