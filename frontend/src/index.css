@@ -17,6 +17,26 @@ code {
   font-family: 'Poppins', sans-serif;
 }
 
+.img-circle {
+  width: 200px;
+  height: 200px;
+
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 :root {
   --main-color: rgb(114 36 147);
@@ -110,28 +130,28 @@ code {
 }
 
 .button-effect-white2 {
-  color: #8D3DAF;
+  color: white;
   transition: 0.50s;
   text-decoration: none;
   border-radius: 35px !important;
-  background: white;
+  background: #7a3697 !important;
   border: 2px solid;
   font: inherit;
   font-weight: bold;
   line-height: 1;
   font-weight: bold;
-
-  padding: 1.2rem 1.2rem !important;
+  font-size: 20px !important;
+  padding: 1.5rem 1.5rem !important;
 }
 
 .button-effect-white2:hover {
-  border-color: white;
-  color: white;
+  border-color: #7a3697;
+  color: #7a3697;
   font-weight: bold;
 }
 
 .fill3:hover {
-  box-shadow: inset 0 0 0 2em #7a3697;
+  box-shadow: inset 0 0 0 2em white;
 }
 
 
@@ -224,7 +244,16 @@ code {
 
 .color-hr {
   color: white;
+
+
 }
+
+.color-hr2 {
+
+  border: 2px solid white
+}
+
+
 
 .color4 {
   background: rgb(114 36 147);

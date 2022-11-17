@@ -10,24 +10,28 @@
     --border: .1rem solid var(--black);
     --box-shadow: 1px 5px 10px 5px #ccc;
     --box-shadow2: 10px 10px 10px 10px #ccc;
+    --box-shadow3: 0px 0px 5px 0px black;
     --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
 }
 
 .header {
     position: sticky;
     top: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    height: 6.5rem;
+
+    /* margin-top: 1rem; */
+    /* margin-bottom: 1rem; */
     /* left: 0; */
     background-color: white !important;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     /* right: 0; */
     z-index: 999;
-    padding: 1%;
+    padding: 1% 2%;
     display: flex;
     margin-left: auto;
+    box-shadow: var(--box-shadow3);
     margin-right: auto;
-    border: 1px solid rgb(218, 218, 218);
+    /* border: 1px solid rgb(218, 218, 218); */
     align-items: center;
 
     /* padding-top: 1rem;
@@ -35,7 +39,7 @@
     justify-content: space-between;
     /* padding-left: 2rem;
   padding-right: 2rem; */
-    width: 90%;
+    width: 100%;
     text-transform: capitalize !important;
 }
 
@@ -250,6 +254,7 @@ menu>a {
 .menu a {
     text-decoration: none;
     color: #121212;
+    font-size: 18px;
     display: block;
     padding: 10px 1.3rem;
 }
@@ -273,7 +278,7 @@ ul {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 210px;
+    min-width: 223px;
     border-radius: 5px;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -330,5 +335,8 @@ ul {
 
     border: none;
 }
+
+
+
 
 /* -----------Navbar style end-------- */

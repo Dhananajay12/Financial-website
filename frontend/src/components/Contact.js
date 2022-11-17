@@ -5,7 +5,7 @@ import { db } from "../FirebaseConfig";
 import { uid } from "uid";
 import { set, ref } from "firebase/database";
 import { Form, Alert, InputGroup, Button } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 // import UserData from "../services/User";
 
 const Contact = () => {
@@ -58,28 +58,6 @@ const Contact = () => {
     setEmail("");
     setMess("");
     // e.preventDefualt();
-
-    // setMessage("");
-    // if (
-    //   name === "" ||
-    //   lastname === "" ||
-    //   phone === "" ||
-    //   email === "" ||
-    //   message === ""
-    // ) {
-    //   setError({ error: true, msg: "All Fields are mandatory" });
-    //   return;
-    // }
-
-    // const newUser = {
-    //   name,
-    //   lastname,
-    //   phone,
-    //   email,
-    //   message,
-    // };
-
-    // console.log(newUser);
   };
 
   return (
@@ -99,8 +77,8 @@ const Contact = () => {
         <h2 className="bold-text mx-2 text-white h1">Get Started Today!</h2>
         <br></br>
         <Form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-md-6">
+          <div className="row ">
+            <div className="col-md-6 mt-2">
               <Form.Group className="input-fluid" controlId="formName">
                 <p className="paragraph-small">FirstName:</p>
                 <InputGroup className=" mt-2">
@@ -114,7 +92,7 @@ const Contact = () => {
                 </InputGroup>
               </Form.Group>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-2">
               <Form.Group className="mb-3" controlId="formlast">
                 <p className="paragraph-small">LastName:</p>
                 <InputGroup>
@@ -129,8 +107,8 @@ const Contact = () => {
               </Form.Group>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-6">
+          <div className="row ">
+            <div className="col-md-6 mt-2">
               <Form.Group className="input-fluid" controlId="formPhone">
                 <p className="paragraph-small">Phone:</p>
                 <InputGroup>
@@ -144,7 +122,7 @@ const Contact = () => {
                 </InputGroup>
               </Form.Group>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-2">
               <Form.Group className="input-fluid" controlId="formEmail">
                 <p className="paragraph-small">Email:</p>
                 <InputGroup>
@@ -159,8 +137,8 @@ const Contact = () => {
               </Form.Group>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-12">
+          <div className="row mt-2">
+            <div className="col-md-12 mt-2">
               <Form.Group className="input-fluid" controlId="formMessage">
                 <p className="paragraph-small">Message:</p>
                 <InputGroup className=" mt-2">
@@ -175,9 +153,27 @@ const Contact = () => {
               </Form.Group>
             </div>
           </div>
+          <div className="row mx-2 mt-4 text-white">
+            <p>
+              <input type="checkbox" name="" value="" className="mx-2" />
+              By checking this box , I understand and acknowledge that the
+              information shared above is genuine to the best of my knowledge.
+            </p>
+            <p className="mx-2">
+              This site is protected by reCAPTCHA and the Google
+              <Link to="/" className="mx-1 text-primary">
+                Privacy Policy{" "}
+              </Link>
+              and{" "}
+              <Link to="/" className="mx-1 text-primary">
+                Terms{" "}
+              </Link>{" "}
+              of Service apply.
+            </p>
+            <br></br>
+          </div>
 
-          <br></br>
-          <div className="">
+          <div className="mx-2">
             <Button
               variant="primary"
               type="Submit"

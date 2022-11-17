@@ -20,7 +20,7 @@ const Home = () => {
       <div className="container">
         <div className="row mt-2">
           <p className="bold-text text-secondary">
-            Kiltons Business Setup and Support Services
+            Loram Business Setup and Support Services
           </p>
           <p className="text-secondary">
             Are you planning for a business setup in Dubai/UAE? We can help you
@@ -102,10 +102,10 @@ const Home = () => {
             dependable. All the legal formalities and ownership agreements will
             be on the sponsor’s name. The risk factors involved can make you
             anxious. Forget the worries, once we are with you. We understand
-            your worries. Kiltons will provide you with the most credible
-            sponsor for your business formation in Dubai. With our assurance,
-            you can forget all the apprehensions about the sponsor. And wholly
-            focus on the development of your business. Consult our professional
+            your worries. Loram will provide you with the most credible sponsor
+            for your business formation in Dubai. With our assurance, you can
+            forget all the apprehensions about the sponsor. And wholly focus on
+            the development of your business. Consult our professional
             representative today to know more about our sponsorship services.
           </p>
         </div>

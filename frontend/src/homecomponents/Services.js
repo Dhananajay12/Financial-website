@@ -27,7 +27,7 @@ import "swiper/css/navigation";
 import { Keyboard, Pagination, Navigation } from "swiper";
 import ChakkraModal from "./ChakkraModal";
 import ModalContact2 from "../components/ModalContact2";
-
+import sun from "../Images/sun-1.png";
 const Services = () => {
   useEffect(() => {
     AOS.init();
@@ -40,7 +40,7 @@ const Services = () => {
           <p className="color2 h1 bold-text">What Services We Offers</p>
           <p className=" mt-4 mx-5">
             Are you looking to set up a business in Dubai? Starting a business
-            in Dubai is easy with help from the right professionals. Kiltons
+            in Dubai is easy with help from the right professionals. Loram
             offers the best and economical business setup services
           </p>
           <p className="bold-text h4 mt-4 text-secondary">
@@ -49,9 +49,32 @@ const Services = () => {
         </div>
         <br></br>
         <div className="row" data-aos="fade-up-left" data-aos-duration="3000">
-          <div className="col-lg-4">
+          <div className="col-lg-4 mt-5">
             {" "}
-            <div className="container1">
+            <div className="card-small-2 zoom">
+              <div className="center">
+                <br></br>
+                <center>
+                  <FcProcess fontSize="90px" />
+                </center>
+                <br></br>
+                <br></br>
+                <h3 className=" h3 bold-text">FAST PROCESS</h3>
+                <br></br>
+
+                <p>
+                  Providing insight-driven transformation to investment banks,
+                  wealth and asset managers, exchanges, clearing houses.
+                </p>
+                <br></br>
+                <ModalContact2 />
+                <br></br>
+                {/* <Link to="/" className="button-effect-white mt-3  fill2">
+                  Get in Touch
+                </Link> */}
+              </div>
+            </div>
+            {/* <div className="container1">
               <div className="card-5">
                 <div className="slide slide1">
                   <div className="content-2">
@@ -61,9 +84,7 @@ const Services = () => {
                         className="img-fluid rounded"
                         alt="error"
                       ></img>
-                      {/* <TbCertificate className="fa" /> */}
-
-                      {/* <i className="fa fa-user-circle" aria-hidden="true"></i> */}
+                     
 
                       <p className="text-white fa" style={{ fontSize: "30px" }}>
                         Licensing{" "}
@@ -80,7 +101,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="col-lg-4 mt-5">
             <div className="card-small-2 zoom">
@@ -383,22 +404,22 @@ const Services = () => {
           >
             <br></br>
             <h1 className="color2 h1" style={{ fontWeight: "bold" }}>
-              Start a Business in Dubai & UAE with Kiltons
+              Start a Business in Dubai & UAE with Loram
             </h1>
             <p className="text-secondary">
-              Kiltons provide a wide range of business setup services in Dubai
-              and UAE for startups, medium enterprises and large business
-              concerns. An amalgamation of trust and quality is the trademark of
-              our Business setup services. And this is not just a marketing
-              gimmick, but our proven growth-formula to be precise. Kiltons
-              offer business setup services related to Mainland, Free zone and
-              Offshore business set up right from the very basics to Licensing,
-              License renewal and a lot more. We consider the success and growth
-              of the clients as the greatest reward. We serve as a helping hand
-              for our esteemed clients and provide prompt recommendations and
-              support. Finding a UAE national sponsor is one of our prestigious
-              services. Other services that we offer are Brand Protection, Bank
-              account opening, PRO Services, Company liquidation and many more.
+              Loram provide a wide range of business setup services in Dubai and
+              UAE for startups, medium enterprises and large business concerns.
+              An amalgamation of trust and quality is the trademark of our
+              Business setup services. And this is not just a marketing gimmick,
+              but our proven growth-formula to be precise. Loram offer business
+              setup services related to Mainland, Free zone and Offshore
+              business set up right from the very basics to Licensing, License
+              renewal and a lot more. We consider the success and growth of the
+              clients as the greatest reward. We serve as a helping hand for our
+              esteemed clients and provide prompt recommendations and support.
+              Finding a UAE national sponsor is one of our prestigious services.
+              Other services that we offer are Brand Protection, Bank account
+              opening, PRO Services, Company liquidation and many more.
             </p>
             <br></br>
 
@@ -478,7 +499,7 @@ const Services = () => {
 
       <br></br>
 
-      <div className="back-img-5" data-aos="fade-up" data-aos-duration="3000">
+      <div className="back-img-5">
         <p className="h1  mx-1  bold-text">Business Setup Guide</p>
         <br></br>
         <div className="row ">
@@ -499,10 +520,10 @@ const Services = () => {
                   technology-driven........
                 </h5>
                 <br></br>
-                <ChakkraModal />
-                {/* <h5 className="h5">
+                {/* <ChakkraModal /> */}
+                <h5 className="h5">
                   Know more <span className="display-2 ">{">>>>"} </span>{" "}
-                </h5> */}
+                </h5>
               </div>
             </div>
           </div>
@@ -522,10 +543,10 @@ const Services = () => {
                   or..........
                 </h5>
                 <br></br>
-                <ChakkraModal />
-                {/* <h5 className="h5">
+
+                <Link className="h5" to="/where">
                   Know more <span className="display-2">{">>>>"} </span>{" "}
-                </h5> */}
+                </Link>
               </div>
             </div>
           </div>
@@ -545,9 +566,11 @@ const Services = () => {
                   very professional...........
                 </h5>
                 <br></br>
-                <ChakkraModal />
-                <br></br>
-                {/* Know more <span className="display-2">{">>>>"} </span>{" "} */}
+                {/* <ChakkraModal /> */}
+
+                <h5 className="h5">
+                  Know more <span className="display-2">{">>>>"} </span>{" "}
+                </h5>
               </div>
             </div>
           </div>
@@ -582,7 +605,7 @@ const Services = () => {
             <h1 className="color2 bold-text h1">Office Spaces</h1>
             <br></br>
             <p className="text-secondary size-para">
-              Starting a business in Dubai or anywhere in UAE with Kiltons in
+              Starting a business in Dubai or anywhere in UAE with Loram in
               simple and time-saving. We help you set up a company in a free
               zone, on mainland or offshore. “According to the data revealed by
               the BRL sector Dubai, more than 9500 new licenses were granted
@@ -593,7 +616,7 @@ const Services = () => {
               business in Dubai. To start a business in Dubai and UAE, you are
               supposed to seek advice only from an individual who works 24* 7 in
               the field of business setup, as the subject deals with legal
-              issues and complicated norms. Kiltons Business Set Up Consultants
+              issues and complicated norms. Loram Business Set Up Consultants
               have a proven track record in providing expert suggestions when it
               comes to business set up in Dubai and UAE. Our highly experienced
               Business Set Up specialistes give you the support and services to

@@ -11,12 +11,12 @@
 
 .sticky li {
     list-style-type: none;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 5px;
     color: #efefef;
     height: 53px;
     padding: 0px;
-    margin: 0px 0px 1px 0px;
+    margin: 0px 0px 5px 0px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -38,16 +38,16 @@
     padding-top: 5px;
     margin: 5px;
     line-height: 16px;
-    font-size: 17px;
+    font-size: 16px;
 
     font-weight: bold;
 }
 
 .sticky li p a {
     text-decoration: none;
-    color: #2C3539;
+    color: white;
 }
 
-.sticky li p a:hover {
+/* .sticky li p a:hover {
     color: purple;
-}
+} */

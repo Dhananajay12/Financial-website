@@ -254,7 +254,7 @@ const Needs = () => {
               </div>
               <div className="col-md-6 col-lg-4">
                 <div
-                  onClick={() => setshowComponent("sub-third")}
+                  onClick={() => setshowComponent("third")}
                   className="card-small card color"
                 >
                   {" "}

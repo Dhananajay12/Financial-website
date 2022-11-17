@@ -87,8 +87,8 @@ const Where = () => {
 
           <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
             <div className="card-main">
-              <div className="image">
-                <img src={img1} />
+              <div className="">
+                <img src={img1} className="img-fluid" />
               </div>
               <div className="details">
                 <div className="center">
