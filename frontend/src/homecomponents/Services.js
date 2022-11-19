@@ -430,7 +430,7 @@ const Services = () => {
                 </h5>
                 <br></br>
 
-                <Link className="h5 link-dec">
+                <Link to="/why" className="h5 link-dec">
                   Know more <span className="display-2 ">{">>>>"} </span>{" "}
                 </Link>
               </div>
@@ -476,7 +476,7 @@ const Services = () => {
                 </h5>
                 <br></br>
 
-                <Link className="h5 link-dec">
+                <Link to="/how" className="h5 link-dec">
                   Know more <span className="display-2">{">>>>"} </span>{" "}
                 </Link>
               </div>

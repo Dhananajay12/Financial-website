@@ -178,6 +178,14 @@ code {
 
 .link-dec {
   color: white;
+  text-decoration: none;
+
+
+}
+
+.link-dec:hover {
+  color: white;
+
 }
 
 .button-effect-white3 {

@@ -6,6 +6,8 @@ import banner from "../Images/banner05.png";
 import Typical from "react-typical";
 import { BsBuilding } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { BsFillTelephoneInboundFill } from "react-icons/bs";
+import { FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const Caursol = () => {
   useEffect(() => {
@@ -43,9 +45,15 @@ const Caursol = () => {
             took a galley of type and scrambled it to <br></br> make a type
             specimen book.
           </p>
-          <Link to="/about" className="button-effect-white3 fill4">
-            Know More
-          </Link>
+          <div className="d-flex">
+            <Link to="/about" className="button-effect-white3 fill4">
+              Know More
+            </Link>
+            <p className="d-flex mx-4 mt-1">
+              <BsFillTelephoneInboundFill className="icons" />{" "}
+              <FaWhatsapp className="icons" /> <FaYoutube className="icons" />
+            </p>
+          </div>
         </div>
       </div>
 
