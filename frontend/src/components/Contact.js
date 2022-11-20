@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./contact.css";
 import advice from "../Images/advice.png";
 import { db } from "../FirebaseConfig";
@@ -6,6 +6,7 @@ import { uid } from "uid";
 import { set, ref } from "firebase/database";
 import { Form, Alert, InputGroup, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,6 +15,30 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [mess, setMess] = useState("");
   const [message, setMessage] = useState({ error: false, msg: "" });
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4yk79ob",
+        "template_twcdqnt",
+        form.current,
+        "5VqSr2F90bBmCjG8a"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   const handleSubmit = async (e) => {
     const uuid = uid();
@@ -47,6 +72,11 @@ const Contact = () => {
     setMess("");
   };
 
+  const handleSubmitData = (e) => {
+    handleSubmit(e);
+    sendEmail(e);
+  };
+
   return (
     <>
       <div className="container-fluid color4 padding3">
@@ -63,7 +93,7 @@ const Contact = () => {
         )}
         <h2 className="bold-text mx-2 text-white h1">Get Started Today!</h2>
         <br></br>
-        <Form onSubmit={handleSubmit}>
+        <Form ref={form} onSubmit={handleSubmitData}>
           <div className="row ">
             <div className="col-md-6 mt-2">
               <Form.Group className="input-fluid" controlId="formName">
@@ -71,6 +101,7 @@ const Contact = () => {
                 <InputGroup className=" mt-2">
                   <Form.Control
                     type="text"
+                    name="name"
                     placeholder=""
                     className="form-control"
                     value={name}
@@ -85,6 +116,7 @@ const Contact = () => {
                 <InputGroup>
                   <Form.Control
                     type="text"
+                    name="lastname"
                     placeholder=""
                     value={lastname}
                     onChange={(e) => setLastname(e.target.value)}
@@ -101,6 +133,7 @@ const Contact = () => {
                   <Form.Control
                     type="number"
                     placeholder=""
+                    name="phone"
                     className="form-control"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
@@ -115,6 +148,7 @@ const Contact = () => {
                   <Form.Control
                     type="email"
                     placeholder=""
+                    name="email"
                     className="form-control"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -130,6 +164,7 @@ const Contact = () => {
                 <InputGroup className=" mt-2">
                   <Form.Control
                     type="text"
+                    name="mess"
                     placeholder=""
                     className="form-control"
                     value={mess}

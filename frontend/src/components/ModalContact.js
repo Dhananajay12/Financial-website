@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./modal.css";
+
 import {
   Modal,
   ModalOverlay,
@@ -11,8 +12,16 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import boy from "../Images/popup-boy.jpg";
+
 const ModalContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [name, setName] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [mess, setMess] = useState("");
+  const [message, setMessage] = useState({ error: false, msg: "" });
+
   return (
     <div>
       <Button onClick={onOpen} className="text-dark">
