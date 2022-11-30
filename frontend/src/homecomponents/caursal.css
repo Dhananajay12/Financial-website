@@ -34,13 +34,13 @@
 .text-small-banner3 {
     font-size: 18px;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 @media (max-width:750px) {
 
     .img-size {
-        height: 20rem
+        height: 16rem
     }
 
     .div-banner {
@@ -74,6 +74,11 @@
 
 }
 
+.size-1 {
+    width: 42rem;
+}
+
+
 .color-hr2 {
 
 
@@ -84,6 +89,10 @@
 
 @media (min-width: 1250px) and (max-width:1450px) {
 
+
+    .size-1 {
+        width: 35rem;
+    }
 
     .font-size-slider {
 
@@ -118,7 +127,7 @@
     .text-small-banner3 {
         font-size: 16px;
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
 }
@@ -130,6 +139,10 @@
 
         font-size: 60px !important;
 
+    }
+
+    .size-1 {
+        width: 30rem;
     }
 
     .color-hr2 {
@@ -158,53 +171,13 @@
     }
 
     .text-small-banner3 {
-        font-size: 15px;
+        font-size: 13px;
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
 
 }
 
-/* @media (min-width: 1050px) and (max-width:1000px) {
-
-    .color-hr2 {
-
-
-        width: 30rem;
-
-
-    }
-
-    .font-size-slider {
-
-        font-size: 50px !important;
-
-    }
-
-
-    .icon-banner {
-        font-size: 40px;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-
-    .text-small-banner1 {
-        font-size: 25px;
-        margin-top: 1rem;
-    }
-
-    .text-small-banner2 {
-        font-size: 25px;
-        margin-top: 0.5rem;
-    }
-
-    .text-small-banner3 {
-        font-size: 13px;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-
-} */
 .icons {
     color: white !important;
     border: 1px solid white;
@@ -215,6 +188,10 @@
 }
 
 @media (min-width: 900px) and (max-width:1000px) {
+
+    .size-1 {
+        width: 25rem;
+    }
 
 
     .font-size-slider {
@@ -250,14 +227,60 @@
     }
 
     .text-small-banner3 {
-        font-size: 13px;
+        font-size: 10px;
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
 
 }
 
-@media (max-width: 900px) {
+@media (min-width: 850px) and (max-width:900px) {
+
+    .size-1 {
+        width: 23rem;
+    }
+
+    .font-size-slider {
+
+        font-size: 40px !important;
+
+    }
+
+    .color-hr2 {
+        margin-top: 0.2rem;
+
+        width: 25rem;
+
+
+    }
+
+
+
+    .icon-banner {
+        font-size: 40px;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .text-small-banner1 {
+        font-size: 17px;
+        margin-top: 1rem;
+    }
+
+    .text-small-banner2 {
+        font-size: 15px;
+        margin-top: 0.5rem;
+    }
+
+    .text-small-banner3 {
+        font-size: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 850px) {
 
     .font-size-slider {
 
@@ -265,9 +288,13 @@
 
     }
 
+    .size-1 {
+        width: 14rem;
+    }
+
     .div-banner {
-        margin-left: 0rem;
-        margin-top: 0.3rem;
+        margin-left: -0.8rem;
+        margin-top: -0.2rem;
 
     }
 
@@ -281,24 +308,24 @@
 
     .text-small-banner1 {
         font-size: 15px;
-        margin-top: 1rem;
+        margin-top: 0.2rem;
     }
 
     .text-small-banner2 {
-        font-size: 13px;
-        margin-top: 0.5rem;
+        font-size: 11px;
+        margin-top: 0rem;
     }
 
     .text-small-banner3 {
-        font-size: 12px;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        font-size: 8px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .color-hr2 {
 
 
-        width: 18rem;
+        width: 14rem;
 
 
     }

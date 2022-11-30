@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <section className="header ">
-        <Link to="/" className="" style={{ marginLeft: "1rem" }}>
+        <Link to="/" className="margin-left-500" style={{ marginLeft: "1rem" }}>
           <p className="h1  bold-text color">LOGO </p>
         </Link>
 
@@ -122,7 +122,7 @@ const Navbar = () => {
 
         <ChakkraModal />
 
-        <div className="hamburger-menu mt-1">
+        <div className="hamburger-menu ">
           <Link onClick={() => setShowMediaIcons(!showMediaIcons)}>
             <GiHamburgerMenu className="icons " />
           </Link>

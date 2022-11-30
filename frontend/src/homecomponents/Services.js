@@ -64,7 +64,8 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 mt-5">
+          <div className="col-lg-4 col-sm-12 mt-5">
+            {" "}
             <div className="card-small-2 zoom">
               <div className="center">
                 <br></br>
@@ -308,7 +309,7 @@ const Services = () => {
       <br></br>
       <br></br>
 
-      <div className="container-fluid padding3">
+      <div className="container">
         <div className="row">
           <div
             className="col-lg-6 col-md-6"
@@ -490,7 +491,7 @@ const Services = () => {
       <br></br>
       <br></br>
 
-      <div className="container-fluid padding3">
+      <div className="container">
         <div className="row">
           <div
             className="col-lg-4 "
@@ -505,12 +506,7 @@ const Services = () => {
             data-aos="fade-up-left"
             data-aos-duration="3000"
           >
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-
-            <h1 className="color2 bold-text h1">Office Spaces</h1>
+            <h1 className="color2 bold-text h1 margit-top ">Office Spaces</h1>
             <br></br>
             <p className="text-secondary size-para">
               Starting a business in Dubai or anywhere in UAE with Loram in
@@ -545,7 +541,7 @@ const Services = () => {
       <br></br>
       <br></br>
 
-      <div className="container-fluid padding3">
+      <div className="container-fluid padding2">
         <div className="mx-5">
           <h1 className="bold-text color h1">Testimonials</h1>
           <br></br>

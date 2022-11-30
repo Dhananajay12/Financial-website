@@ -14,25 +14,27 @@ const Needs = () => {
   }, []);
   return (
     <>
-      <div className="center">
-        <p className="color2 h1 bold-text">Business Set Up Services</p>
-        <p className="padding-4 mt-4">
-          Are you looking to set up a business in Dubai? Starting a business in
-          Dubai is easy with help from the right professionals. Kiltons offers
-          the best and economical business setup services
-        </p>
-        <p className="bold-text h4 mt-4 text-secondary">
-          Choose your business need in Dubai or UAE to continue
-        </p>
+      <div className="container">
+        <div className="center">
+          <p className="color2 h1 bold-text">Business Set Up Services</p>
+          <p className="padding-4 mt-4">
+            Are you looking to set up a business in Dubai? Starting a business
+            in Dubai is easy with help from the right professionals. Kiltons
+            offers the best and economical business setup services
+          </p>
+          <p className="bold-text h4 mt-4 text-secondary">
+            Choose your business need in Dubai or UAE to continue
+          </p>
+        </div>
       </div>
       <br />
       <br />
       <br />
       <br></br>
-      <div>
+      <div className="container">
         {showComponent === "start" && (
           <>
-            <div className="container-fluid padding3">
+            <div className="container">
               <div className="row">
                 <div
                   className="col-md-4 mt-2"
@@ -86,7 +88,7 @@ const Needs = () => {
         )}
         {showComponent === "add-trip" && (
           <div
-            className="container-fluid padding3 "
+            className="container "
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -178,7 +180,7 @@ const Needs = () => {
         )}
         {showComponent === "company" && (
           <div
-            className="container-fluid padding3"
+            className="container "
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -235,7 +237,7 @@ const Needs = () => {
         )}
         {showComponent === "sub-third" && (
           <div
-            className="container-fluid padding3"
+            className="container"
             data-aos="fade-up"
             data-aos-duration="3000"
           >
@@ -243,7 +245,7 @@ const Needs = () => {
               <div className="col-md-6 col-lg-4">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card-small card color"
+                  className="card-small card color mt-2"
                 >
                   {" "}
                   <p>I WANT TO CCHANGE MY LOCATION</p>
@@ -255,7 +257,7 @@ const Needs = () => {
               <div className="col-md-6 col-lg-4">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card-small card color"
+                  className="card-small card color mt-2"
                 >
                   {" "}
                   <p>I WANT TO CHANGES MY LOCAL SPONSOR</p>
@@ -267,7 +269,7 @@ const Needs = () => {
               <div className="col-md-6 col-lg-4">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card-small card color"
+                  className="card-small card color mt-2"
                 >
                   {" "}
                   <p>I WANT TO ADD/CHANGE ACTIVITY</p>
@@ -282,7 +284,7 @@ const Needs = () => {
               <div className="col-md-6 col-lg-4">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card-small card color"
+                  className="card-small card color mt-2"
                 >
                   {" "}
                   <p>I WANT TO ADD/REMOVE PARTNER</p>
@@ -294,7 +296,7 @@ const Needs = () => {
               <div className="col-md-6 col-lg-4">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card-small card color"
+                  className="card-small card color mt-2"
                 >
                   {" "}
                   <p>OTHER CHANGES</p>
@@ -303,10 +305,10 @@ const Needs = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-4 ">
                 <div
                   onClick={() => setshowComponent("third")}
-                  className="card-small card color"
+                  className="card-small card color mt-2"
                 >
                   {" "}
                   <p>TALK TO OUR EXPERT</p>
@@ -331,7 +333,7 @@ const Needs = () => {
         )}
         {showComponent === "third" && (
           <div
-            className="container-fluid padding3"
+            className="container"
             data-aos="fade-up"
             data-aos-duration="3000"
           >

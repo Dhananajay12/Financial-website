@@ -19,7 +19,7 @@ const How = () => {
 
   return (
     <>
-      <SmallStrip data={"How"} data2={"Business-Guide"} />
+      <SmallStrip data="How" data2="Business-Guide" />
       <br></br>
       <div className="container-fluid padding3">
         <div className="row">

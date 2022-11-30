@@ -1,12 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+
+
+
 body {
-  margin: 0;
+
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
+}
+
+@media only screen and (max-width:580px) {
+
+
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+    height: 1em;
+    display: none;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 60px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(120, 65, 143);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+  }
 }
 
 * {
@@ -200,7 +240,7 @@ code {
   line-height: 1;
   font-weight: bold;
 
-  padding: 1.2rem 1.2rem !important;
+  padding: 1.6rem 1.5rem !important;
 }
 
 .button-effect-white3:hover {
@@ -481,4 +521,72 @@ code {
 
 .card-main .details .center ul li a:hover {
   background: #ff3636;
+}
+
+
+
+
+
+.margit-top {
+  margin-top: 5rem;
+}
+
+@media(min-width:800px) and (max-width:1400px) {
+
+  .margit-top {
+    margin-top: 2rem;
+  }
+}
+
+
+.button-effect-white4 {
+  color: #8D3DAF;
+  transition: 0.50s;
+  text-decoration: none;
+  border-radius: 35px !important;
+  background: white;
+  border: 2px solid;
+  font: inherit;
+  font-weight: bold;
+  line-height: 1;
+  font-weight: bold;
+
+  padding: 1.2rem 1.5rem !important;
+}
+
+.button-effect-white4:hover {
+  border-color: white;
+  color: white;
+  font-weight: bold;
+}
+
+.fill5:hover {
+  box-shadow: inset 0 0 0 2em #7a3697;
+}
+
+@media (max-width:1000px) {
+  .button-effect-white4 {
+    color: #8D3DAF;
+    transition: 0.50s;
+    text-decoration: none;
+    border-radius: 35px !important;
+    background: white;
+    border: 2px solid;
+    font: inherit;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: -5px;
+    padding: 0.4rem 0.4rem !important;
+  }
+
+  .button-effect-white4:hover {
+    border-color: white;
+    color: white;
+    font-weight: bold;
+  }
+
+  .fill5:hover {
+    box-shadow: inset 0 0 0 2em #7a3697;
+  }
 }

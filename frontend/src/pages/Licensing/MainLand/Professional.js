@@ -20,7 +20,7 @@ const Professional = () => {
 
   return (
     <>
-      <SmallStrip data={"Professional"} data2={"Licensing"} />
+      <SmallStrip data="Professional" data2="Licensing" />
       <br></br>
       <br></br>
       <div className="container-fluid padding3">

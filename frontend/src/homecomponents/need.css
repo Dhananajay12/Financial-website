@@ -32,7 +32,7 @@
 }
 
 .card {
-    height: 273px;
+    height: 273px !important;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;

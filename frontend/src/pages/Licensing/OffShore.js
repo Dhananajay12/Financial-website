@@ -19,7 +19,7 @@ const OffShore = () => {
   }, []);
   return (
     <>
-      <SmallStrip data={"OffShore"} data2={"Licensing"} /> <br></br>
+      <SmallStrip data="OffShore" data2="Licensing" /> <br></br>
       <br></br>
       <div className="container-fluid padding3">
         <div className="row">

@@ -19,7 +19,7 @@ const FreeZone = () => {
   }, []);
   return (
     <>
-      <SmallStrip data={"FreeZone"} data2={"Licensing"} />
+      <SmallStrip data="FreeZone" data2="Licensing" />
       <br></br>
       <br></br>
       <div className="container-fluid padding3">

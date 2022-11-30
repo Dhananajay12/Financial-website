@@ -21,6 +21,7 @@ import Blog from "./pages/Blog";
 import SocialBAr from "./components/SocialBAr";
 
 function App() {
+  console.warn = () => {};
   return (
     <div className="App">
       <Navbar />

@@ -229,8 +229,8 @@ const Footer = () => {
               <FaTwitter className="icons zoom" />
               <AiOutlineSkype className="icons zoom" />
               <FaLinkedinIn className="icons zoom" />
-              <AiFillGithub className="icons zoom" />
-              <AiOutlineGoogle className="icons zoom" />
+              {/* <AiFillGithub className="icons zoom" />
+              <AiOutlineGoogle className="icons zoom" /> */}
             </div>
             <div className="icon-social color5">
               <h5 className="padding text-white h5">

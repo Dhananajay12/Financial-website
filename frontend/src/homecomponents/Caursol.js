@@ -38,30 +38,20 @@ const Caursol = () => {
               ]}
             />
           </p>
-          <p className="text-small-banner3 ">
+          <p className="text-small-banner3 size-1">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. <br></br> Lorem Ipsum has been the industry's standard
-            dummy text ever since the<br></br> 1500s, when an unknown printer
-            took a galley of type and scrambled it to <br></br> make a type
-            specimen book.
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
           </p>
-          <div className="d-flex">
-            <Link to="/about" className="button-effect-white3 fill4">
-              Know More
-            </Link>
-            <p className="d-flex mx-4 mt-1">
-              <BsFillTelephoneInboundFill className="icons" />{" "}
-              <FaWhatsapp className="icons" /> <FaYoutube className="icons" />
-            </p>
-          </div>
+          <Link to="/about" className="button-effect-white4 fill5">
+            Know More
+          </Link>
         </div>
       </div>
 
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-
       <br></br>
       <br></br>
     </>

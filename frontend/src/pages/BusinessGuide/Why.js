@@ -10,7 +10,7 @@ const Why = () => {
 
   return (
     <>
-      <SmallStrip data={"Why"} data2={"Business-Guide"} />
+      <SmallStrip data="Why" data2="Business-Guide" />
       <br></br>
       <br></br>
       <br></br>

@@ -19,7 +19,7 @@ const InvestorVisa = () => {
   }, []);
   return (
     <>
-      <SmallStrip data={"Dubai-Investor-Visa"} data2={"Visa"} />
+      <SmallStrip data="Dubai-Investor-Visa" data2="Visa" />
       <br></br>
       <br></br>
       <div className="container-fluid padding3">

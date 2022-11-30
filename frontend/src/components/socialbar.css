@@ -5,9 +5,15 @@
     right: -155px;
     top: 230px;
     width: 210px;
-
-    z-index: 1100;
+    z-index: 999;
 }
+
+@media (max-width:600px) {
+    .sticky-container {
+        display: none;
+    }
+}
+
 
 .sticky li {
     list-style-type: none;

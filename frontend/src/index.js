@@ -10,11 +10,11 @@ const container = document.getElementById("root");
 const root = ReactDOMClient.createRoot(container);
 
 root.render(
-  <BrowserRouter>
-    <React.StrictMode>
+  <React.StrictMode>
+    <BrowserRouter>
       <ChakraProvider>
         <App />
       </ChakraProvider>
-    </React.StrictMode>
-  </BrowserRouter>
+    </BrowserRouter>
+  </React.StrictMode>
 );

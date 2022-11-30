@@ -16,7 +16,7 @@ const Where = () => {
 
   return (
     <>
-      <SmallStrip data={"Where"} data2={"Business-Guide"} />
+      <SmallStrip data="Where" data2="Business-Guide" />
       <br></br>
       <br></br>
 
@@ -86,7 +86,7 @@ const Where = () => {
           </p>
 
           <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
-            <div className="card-main">
+            {/* <div className="card-main">
               <div className="">
                 <img src={img1} className="img-fluid" alt="error" />
               </div>
@@ -110,7 +110,7 @@ const Where = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="col-lg-4 col-md-6 col-xl-4 mt-4">

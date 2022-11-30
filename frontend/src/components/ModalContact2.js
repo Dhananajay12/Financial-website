@@ -8,12 +8,13 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
+  Button,
 } from "@chakra-ui/react";
 import boy from "../Images/popup-boy.jpg";
 import { db } from "../FirebaseConfig";
 import { uid } from "uid";
 import { set, ref } from "firebase/database";
-import { Form, Alert, InputGroup, Button } from "react-bootstrap";
+import { Form, Alert, InputGroup } from "react-bootstrap";
 
 import emailjs from "@emailjs/browser";
 const ModalContact2 = () => {
@@ -44,7 +45,7 @@ const ModalContact2 = () => {
           window.location.reload();
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
         }
       );
   };

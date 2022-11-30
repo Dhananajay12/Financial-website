@@ -9,11 +9,12 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
+  Button,
 } from "@chakra-ui/react";
 import { db } from "../FirebaseConfig";
 import { uid } from "uid";
 import { set, ref } from "firebase/database";
-import { Form, Alert, InputGroup, Button } from "react-bootstrap";
+import { Form, Alert, InputGroup } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 const ChakkraModal = () => {
@@ -40,11 +41,9 @@ const ChakkraModal = () => {
       .then(
         (result) => {
           console.log(result.text);
-
-          window.location.reload();
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
         }
       );
   };
@@ -94,7 +93,7 @@ const ChakkraModal = () => {
 
       <Modal onClose={onClose} isOpen={isOpen} size="6xl" isCentered>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent style={{ marginTop: "10rem" }}>
           <ModalHeader fontSize="30px" color="purple">
             Cost Calculate
           </ModalHeader>
@@ -212,7 +211,7 @@ const ChakkraModal = () => {
                 </Button>
                 <Button
                   onClick={onClose}
-                  className="button-effect-white3  fill4"
+                  className="button-effect-white3  fill4 mx-1"
                 >
                   Close
                 </Button>

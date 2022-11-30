@@ -21,8 +21,7 @@ const Mainland = () => {
 
   return (
     <>
-      <SmallStrip data={"Mainland"} data2={"Licensing"} />
-      <br></br>
+      <SmallStrip data="Mainland" data2="Licensing" />
       <br></br>
       <div className="container-fluid padding3">
         <div className="row">

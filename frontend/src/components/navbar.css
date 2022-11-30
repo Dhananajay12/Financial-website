@@ -137,7 +137,10 @@
     .navbar.active {
         margin-top: 1.5rem;
         left: 0;
+        width: 95%;
         border-radius: 10px;
+        margin-left: 0.3rem;
+
         height: 20rem;
         transition: all 0.5s ease;
         z-index: 1;
@@ -158,7 +161,7 @@
     .hamburger-menu {
         display: block !important;
         /* position: absolute; */
-        margin-top: -4.5rem !important;
+        margin-top: -4rem !important;
 
 
         transform: translate(-100%, 60%);
@@ -265,7 +268,7 @@ ul {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 223px;
+    min-width: 200px;
     border-radius: 5px;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -287,6 +290,49 @@ ul {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
+@media (max-width:600px) {
+
+    .menu a {
+
+        font-weight: bold;
+        margin-top: 1rem;
+        font-size: 12px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 180px;
+        border-radius: 5px;
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: all 1s ease-in;
+    }
+
+    .dropdown-content2 {
+        transition: all 1s ease-in;
+        left: 100.5%;
+        width: 100%;
+        padding: 0;
+        border-radius: 5px;
+        display: none;
+        top: 0;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .margin-left-500 {
+        margin-right: -3rem !important;
+    }
+
+}
+
 
 .dropdown-content li:hover {
     background-color: #ddd;

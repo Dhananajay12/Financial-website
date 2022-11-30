@@ -19,7 +19,7 @@ const Tourism = () => {
   }, []);
   return (
     <>
-      <SmallStrip data={"Tourism"} data2={"Licensing"} />
+      <SmallStrip data="Tourism" data2="Licensing" />
       <br></br>
       <br></br>
       <div className="container-fluid padding3">
