@@ -94,7 +94,7 @@ const ModalContact2 = () => {
       </Button>
       <Modal onClose={onClose} isOpen={isOpen} size="6xl" isCentered>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent style={{ marginTop: "10rem" }}>
           <ModalCloseButton />
           <ModalBody style={{ padding: "0px" }}>
             <div className="row">

@@ -13,7 +13,7 @@ import "./services.css";
 import { FaShieldAlt, FaUsers, FaUserShield } from "react-icons/fa";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../style.css";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

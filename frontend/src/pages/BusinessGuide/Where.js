@@ -7,7 +7,7 @@ import img1 from "../../Images/b4.png";
 import SmallStrip from "../../components/SmallStrip";
 import ModalContact2 from "../../components/ModalContact2";
 
-import "../../style.css";
+// import "../../style.css";
 
 const Where = () => {
   useEffect(() => {

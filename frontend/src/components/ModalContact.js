@@ -87,7 +87,7 @@ const ModalContact = () => {
     sendEmail(e);
   };
   return (
-    <div>
+    <div className="">
       <Button onClick={onOpen} className="">
         <div className="card-small card color">
           {" "}
@@ -102,9 +102,9 @@ const ModalContact = () => {
       </Button>
       <Modal onClose={onClose} isOpen={isOpen} size="6xl" isCentered>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent className="margin-top">
           <ModalCloseButton />
-          <ModalBody style={{ padding: "0px" }}>
+          <ModalBody style={{ padding: "2px" }}>
             <div className="row">
               <div className="col-md-6 col-lg-6">
                 <img src={boy} className="img-fluid" alt="error" />
@@ -123,7 +123,7 @@ const ModalContact = () => {
                   </Alert>
                 )}
                 <Form ref={form} onSubmit={handleSubmitData}>
-                  <div className="row text-center">
+                  <div className="row text-center mx-1">
                     <p>
                       Hassle-free company formation in Dubai Fill in your
                       <br></br>
@@ -131,7 +131,7 @@ const ModalContact = () => {
                     </p>
                   </div>
                   <br></br>
-                  <div className="row ">
+                  <div className="row " style={{ padding: "5px" }}>
                     <div className="col-md-6 mt-2">
                       <Form.Group className="input-fluid" controlId="formName">
                         <p className="mx-2">FirstName:</p>
@@ -163,7 +163,7 @@ const ModalContact = () => {
                       </Form.Group>
                     </div>
                   </div>
-                  <div className="row ">
+                  <div className="row " style={{ padding: "5px" }}>
                     <div className="col-md-6 mt-2">
                       <Form.Group className="input-fluid" controlId="formPhone">
                         <p className="mx-2">Phone:</p>
@@ -195,7 +195,7 @@ const ModalContact = () => {
                       </Form.Group>
                     </div>
                   </div>
-                  <div className="row mt-2">
+                  <div className="row mt-2" style={{ padding: "5px" }}>
                     <div className="col-md-12 mt-2">
                       <Form.Group
                         className="input-fluid"
@@ -215,7 +215,7 @@ const ModalContact = () => {
                       </Form.Group>
                     </div>
                   </div>
-                  <div className="row  mt-5 ">
+                  <div className="row  mt-5 mx-1">
                     <p>
                       <input
                         type="checkbox"
@@ -231,7 +231,7 @@ const ModalContact = () => {
                     <br></br>
                   </div>
 
-                  <div className=" just-con   mt-5">
+                  <div className=" just-con   mt-5 mx-3">
                     <Button
                       variant="primary"
                       type="Submit"
