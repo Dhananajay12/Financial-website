@@ -114,7 +114,20 @@ const Where = () => {
           </div>
 
           <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
-            <img src={img1} className="img-fluid" alt="error" />
+            <div className="img-hover-effect">
+              <img src={img1} className="img-fluid" alt="error" />
+              <div className="div-img-con1">
+                <p>Mainland</p>
+              </div>
+
+              <div className="div-img-con2">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </div>
+            </div>
           </div>
           <div className="col-lg-4 col-md-6 col-xl-4 mt-4">
             <img src={img1} className="img-fluid" alt="error" />

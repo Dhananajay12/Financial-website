@@ -1,49 +1,24 @@
 import React from "react";
-import { BsBuilding } from "react-icons/bs";
-import { BiBuilding, BiBuildings } from "react-icons/bi";
+
 import { RiArrowDropRightFill } from "react-icons/ri";
+import bg from "../Images/bg.png";
+
 const SmallStrip = (prop) => {
   return (
     <>
-      <div className="container-fluid back-color ">
-        <div className="just-con padding3 text-white ">
-          <div className="d-flex h5 mt-5 text-block">
-            Home <RiArrowDropRightFill fontSize="30px" className="" />{" "}
-            {prop.data2} <RiArrowDropRightFill fontSize="30px" className="" />{" "}
-            {prop.data}
-          </div>
-          <div className="d-flex text-white mt-1 ">
-            <div
-              className=" zoom "
-              style={{
-                background: "white",
-                color: "purple",
-                padding: "1rem",
-              }}
-            >
-              <BsBuilding fontSize="60px" className="mt-2" />
-              <p className="mt-1">
-                MAINLAND <br></br>LICENSE
-              </p>
-            </div>
-            <div className=" mx-1 zoom" style={{ padding: "1rem" }}>
-              <BiBuilding fontSize="60px" />
-              <p className="mt-1">
-                MAINLAND <br></br>LICENSE
-              </p>
-            </div>
-            <div
-              className=" zoom"
-              style={{ background: "white", color: "purple", padding: "1rem" }}
-            >
-              <BiBuildings fontSize="60px" />
-              <p className="mt-1">
-                MAINLAND <br></br>LICENSE
-              </p>
-            </div>
-          </div>
+      <div className="container-fluid " style={{ padding: "0" }}>
+        <img src={bg} alt="error" className="img-fluid back-img shadow2" />
+
+        <div className="icon-social-right h5 bold-text">
+          <p className="d-flex mt-3 mx-4">
+            {" "}
+            Home <RiArrowDropRightFill fontSize="" className="" /> {prop.data2}{" "}
+            <RiArrowDropRightFill fontSize="" className="" /> {prop.data}
+          </p>
         </div>
       </div>
+      <br></br>
+      <br></br>
     </>
   );
 };
